@@ -15,3 +15,18 @@ body {
 :root {
     --grey1: #efefefa6;
 }
+
+
+main {
+    max-width: 1050px;
+    width: 67.5%;
+    margin: 0 auto;
+    padding: 2.063rem 0;
+    border-radius: 0.625rem;
+}
+
+@media (max-width: 1024px){
+    main{
+        width: 90%;
+    } 
+}

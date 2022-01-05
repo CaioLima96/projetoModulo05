@@ -1,0 +1,55 @@
+#quartosLista{
+    display: flex;
+    flex-wrap: wrap;
+    
+    list-style: none;
+}
+
+.quartoListaItem {
+    display: grid;
+    height: 100%;
+
+    grid-template-rows: 1fr 117px;
+    grid-template-columns: repeat(12, 1fr);
+
+    max-width: 450px;
+    width: 100%;
+    /* height: 353px; */
+
+    background-color: black;
+    margin: 1%;
+}
+
+.quartoListaImg {
+    grid-column: 1/13;
+    grid-row: 1/1;
+
+    width: 100%;
+    height: 292px;
+    background-color: red;
+}
+
+.quartoListaImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.quartoListaInfo {
+    /* max-width: 357px;
+    width: 80%; */
+
+    grid-column: 3/11;
+    grid-row: 2/2;
+
+    /* width: 357px; */
+    width: 100%;
+
+    text-align: center;
+    background-color: white;
+    /* color: white; */
+}
+
+.quartoListaInfo button {
+    margin-top: 38px;
+}

@@ -7,12 +7,28 @@ html, body, #root, .App {
   display: grid;
   height: 100%;
 
-  grid-template-rows: 60px 1fr 40px;
+  grid-template-rows: 60px 90% 1fr 245px;
   grid-template-columns: repeat(12, 1fr);
 }
 
-header, #content, footer {
+header, #heroImg, main, footer {
   grid-column: 1/13;
+}
+
+header{
+  grid-row: 1/1;
+}
+
+#heroImg {
+  grid-row: 2/2;
+}
+
+main {
+  grid-row: 3/3;
+}
+
+footer{
+grid-row: 4/4;
 }
 
 /* #content {

@@ -1,4 +1,8 @@
 header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
     background-color: gray;
 }
 
@@ -29,6 +33,11 @@ header {
 
     .hideShowBtn {
         display: block !important;
+    }
+
+    header{
+        display: initial;
+        z-index: 1;
     }
 
     #navMenu > div {

@@ -1,8 +1,10 @@
 import Header from './components/global/Header/Index.js';
 import Footer from './components/global/Footer/Index.js';
-import { HeroImg } from './components/global/HeroImg/Index.js';
+// import { HeroImg } from './components/global/HeroImg/Index.js';
+import { Quartos } from './components/Quartos/Index.js';
 
 import './App.css';
+import './styles/global.css'
 
 
 function App() {
@@ -12,13 +14,13 @@ function App() {
 
 			<Header/>
 
-			<div id="content">
+			{/* <div id="content"> */}
 
-				<HeroImg/>
+				{/* <HeroImg/> */}
 				
+				<Quartos/>
 				
-				
-			</div>
+			
 
 			<Footer/>
 		</div>
