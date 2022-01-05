@@ -1,0 +1,17 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap'); */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--grey1);
+
+}
+
+:root {
+    --grey1: #efefefa6;
+}
