@@ -1,6 +1,6 @@
 import React from "react";
 import { HeroImg } from "../global/HeroImg/Index";
-import { QuartosLista } from "./QuartosLista/Index";
+import { ImagensLista1 } from "./ImagensLista1/Index";
 
 import './Index.css'
 
@@ -11,7 +11,7 @@ export const Quartos = () => {
         <>
             <HeroImg/>
 
-            <QuartosLista/>
+            <ImagensLista1/>
         </>
     )
 }

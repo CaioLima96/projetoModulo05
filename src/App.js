@@ -14,13 +14,13 @@ function App() {
 
 			<Header/>
 
-			<div id="content">
+			{/* <div id="content"> */}
 
 				{/* <HeroImg/> */}
 				
 				<Quartos/>
 				
-			</div>
+			
 
 			<Footer/>
 		</div>
