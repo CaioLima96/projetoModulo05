@@ -1,0 +1,28 @@
+#heroImg {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+
+    background-image: url("../../../assets/img/quarto1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width: 1024px){
+
+    #heroImg{
+        height: 90%;
+        background-position: center;
+    }
+}
+
+@media(min-width: 1025px) {
+
+    #heroImg{
+        height: 80vh;
+    }
+}

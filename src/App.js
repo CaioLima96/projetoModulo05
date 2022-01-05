@@ -1,7 +1,9 @@
 import Header from './components/global/Header/Index.js';
 import Footer from './components/global/Footer/Index.js';
+import { HeroImg } from './components/global/HeroImg/Index.js';
 
 import './App.css';
+
 
 function App() {
 
@@ -12,6 +14,7 @@ function App() {
 
 			<div id="content">
 
+				<HeroImg/>
 				
 				
 				
