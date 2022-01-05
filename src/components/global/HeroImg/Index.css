@@ -12,6 +12,10 @@
     background-size: cover;
 }
 
+h1 {
+    font-size: 3.125rem;
+}
+
 @media(max-width: 1024px){
 
     #heroImg{
