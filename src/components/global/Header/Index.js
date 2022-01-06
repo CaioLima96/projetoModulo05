@@ -1,4 +1,5 @@
 import React from "react";
+import { RerserveAquiBtn } from "../ReserveAquiBtn/Index";
 
 import './Index.css'
 
@@ -31,7 +32,7 @@ class Header extends React.Component {
                         <li><a href="/">Experiências</a></li>
                         <li><a href="/">Galera</a></li>
                         <li><a href="/">Fale Conosco</a></li>
-                        <li><button>RESERVE AQUI</button></li>
+                        <li><RerserveAquiBtn/></li>
                     </ul>
 
                 </nav>
