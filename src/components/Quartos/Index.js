@@ -1,6 +1,6 @@
 import React from "react";
 import { HeroImg } from "../global/HeroImg/Index";
-import { ImagensLista1 } from "./ImagensLista1/Index";
+import { ImagensLista1 } from "../global/ImagensLista1/Index";
 
 import './Index.css'
 
