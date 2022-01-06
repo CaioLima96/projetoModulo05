@@ -4,3 +4,7 @@
     border-radius: 4px;
     border: white;
 }
+
+#reserveAquiBtn:hover{
+    background-color: var(--grey1);
+}
