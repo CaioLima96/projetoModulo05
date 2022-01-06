@@ -1,34 +1,34 @@
 html, body, #root, .App {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .App {
-  display: grid;
-  height: 100%;
+	display: grid;
+	height: 100%;
 
-  grid-template-rows: 60px 90% 1fr 245px;
-  grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 60px 90% 1fr 245px;
+	grid-template-columns: repeat(12, 1fr);
 }
 
 header, #heroImg, main, footer {
-  grid-column: 1/13;
+	grid-column: 1/13;
 }
 
 header{
-  grid-row: 1/1;
+	grid-row: 1/1;
 }
 
 #heroImg {
-  grid-row: 2/2;
+	grid-row: 2/2;
 }
 
 main {
-  grid-row: 3/3;
+	grid-row: 3/3;
 }
 
 footer{
-grid-row: 4/4;
+	grid-row: 4/4;
 }
 
 /* #content {
@@ -36,14 +36,21 @@ grid-row: 4/4;
 } */
 
 .App-link {
-  color: #61dafb;
+  	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+	}
+
+@media (max-width: 1024px) {
+
+	.App {
+		grid-template-rows: 60px 90% 1fr 1fr;
+	}
 }
