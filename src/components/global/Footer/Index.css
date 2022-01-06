@@ -51,5 +51,19 @@ footer {
         align-items: center;
 
         width: 100%;
-    } 
+        text-align: center;
+    }
+
+    .footerContent ul:last-child {
+        margin-bottom: 1.875rem;
+    }
+
+    .footerContent button {
+        margin-top: 1.875rem;
+    }
+
+    .divBar {
+        width: 70%;
+        margin: 1.875rem 0;
+    }
 }
