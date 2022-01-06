@@ -6,50 +6,48 @@
 }
 
 .quartoListaItem {
-    display: grid;
-    height: 100%;
-
-    grid-template-rows: 1fr 117px;
-    grid-template-columns: repeat(12, 1fr);
-
     max-width: 450px;
     width: 100%;
-    /* height: 353px; */
+    height: 353px;
+
+    position: relative;
+    overflow: hidden;
 
     background-color: black;
     margin: 1%;
 }
 
 .quartoListaImg {
-    grid-column: 1/13;
-    grid-row: 1/1;
-
     width: 100%;
     height: 292px;
-    background-color: red;
 }
 
 .quartoListaImg img {
-    object-fit: cover;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .quartoListaInfo {
-    /* max-width: 357px;
-    width: 80%; */
+    width: 80%;
+    
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
 
-    grid-column: 3/11;
-    grid-row: 2/2;
-
-    /* width: 357px; */
-    width: 100%;
-
+    border-radius: 5px;
     text-align: center;
     background-color: white;
-    /* color: white; */
 }
 
-.quartoListaInfo button {
-    margin-top: 38px;
+.quartoListaInfo p {
+    font-size: 1.25rem;
+    margin: 1.125rem 0 2.375rem 0;
+}
+
+.quartoListaItem button {
+    color: black;
 }
