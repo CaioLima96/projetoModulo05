@@ -1,4 +1,5 @@
 import React from "react";
+import { RerserveAquiBtn } from "../ReserveAquiBtn/Index";
 
 import './Index.css'
 
@@ -10,7 +11,7 @@ class Footer extends React.Component {
 
                 <div class="footerContent">
 
-                    <button>RESERVE AQUI</button>
+                    <RerserveAquiBtn/>
 
                     <div class="divBar"></div>
 

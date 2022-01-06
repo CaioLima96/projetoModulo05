@@ -59,6 +59,10 @@ header {
 
         margin: 0;
         background-color: #333333 !important;
-        padding: 0.625rem 0;
+        padding: 0.625rem 1rem;
+    }
+
+    #navBarLista li {
+        margin: 0 0 0.688rem 0;
     }
 }
