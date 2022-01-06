@@ -1,5 +1,5 @@
-import Header from './components/global/Header/Index.js';
-import Footer from './components/global/Footer/Index.js';
+import Header from './components/Global/Header/Index.js';
+import Footer from './components/Global/Footer/Index.js';
 // import { HeroImg } from './components/global/HeroImg/Index.js';
 import { Quartos } from './components/Quartos/Index.js';
 

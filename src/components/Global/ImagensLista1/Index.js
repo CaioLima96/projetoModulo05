@@ -1,5 +1,5 @@
 import React from "react";
-import { VerMaisBtn } from "../../global/VerMaisBtn/Index";
+import {VerMaisBtn} from '../VerMaisBtn/Index.js'
 
 import './Index.css'
 
