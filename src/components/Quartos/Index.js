@@ -11,7 +11,10 @@ export const Quartos = () => {
         <>
             <HeroImg/>
 
-            <ImagensLista1/>
+            <main>
+                <ImagensLista1/>
+            </main>
+            
         </>
     )
 }
