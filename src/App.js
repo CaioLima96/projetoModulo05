@@ -1,7 +1,7 @@
-import Header from './components/Global/Header/Index.js';
-import Footer from './components/Global/Footer/Index.js';
+import Header from './components/Global/Header/Index';
+import Footer from './components/Global/Footer/Index';
 // import { HeroImg } from './components/global/HeroImg/Index.js';
-import { Quartos } from './components/Quartos/Index.js';
+import { Quartos } from './components/Quartos/Index';
 
 import './App.css';
 import './styles/global.css'
