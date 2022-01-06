@@ -7,12 +7,28 @@ footer {
 
 .footerContent {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     
+}
+
+.footerContent button {
+    width: 200px;
+    height: 50px;
+    align-self: center;
 }
 
 .footerContent ul {
     list-style: none;
+}
+
+.footerContent ul li:first-child {
+    font-size: 1.563rem;
+    margin-bottom: 1.25rem;
+}
+
+.footerContent ul li:not(li:first-child, li:last-child) {
+    font-size: 0.875rem;
+    margin-bottom: 0.563rem;
 }
 
 .footerContent {
@@ -23,9 +39,9 @@ footer {
 
 .divBar{
     width: 4px;
-    height: 100%;
     margin: 0 1rem;
     background-color: black;
+    border: 1px solid black;
 }
 
 @media (max-width: 1024px){
