@@ -8,7 +8,11 @@ export const Quartos = () => {
     return (
         <>
             <HeroImg/>
-            <ImagensLista1/>
+
+            <main>
+                <ImagensLista1/>
+            </main>
+            
         </>
     )
 }

@@ -13,8 +13,6 @@ export const FooterContent = styled.div`
     display: flex;
     justify-content: space-between;
 
-    /* background-color: ${({banana, batata, bolinha}) => bolinha}; */
-
     button {
         width: 200px;
         height: 50px;

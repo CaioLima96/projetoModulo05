@@ -8,7 +8,7 @@ import quarto3 from "../../assets/img/quarto3.jpg"
 export const ImagensLista1 = () => {
     return (
 
-        <main>
+        
             <ul id="quartosLista">
 
                 <li class="quartoListaItem">
@@ -64,6 +64,6 @@ export const ImagensLista1 = () => {
                 </li>
 
             </ul>
-        </main>
+        
     )
 }
