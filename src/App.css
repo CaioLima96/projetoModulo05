@@ -3,17 +3,17 @@ html, body, #root, .App {
 	height: 100%;
 }
 
-.App {
+#root {
 	display: grid;
 	height: 100%;
 
 	grid-template-rows: 60px 90% 1fr 245px;
-	grid-template-columns: repeat(12, 1fr);
+	/* grid-template-columns: repeat(12, 1fr); */
 }
 
-header, #heroImg, main, footer {
+/* header, #heroImg, main, footer {
 	grid-column: 1/13;
-}
+} */
 
 header{
 	grid-row: 1/1;
@@ -50,7 +50,7 @@ footer{
 
 @media (max-width: 1024px) {
 
-	.App {
+	#root {
 		grid-template-rows: 60px 90% 1fr 1fr;
 	}
 }

@@ -1,15 +1,18 @@
 import React from "react";
-import { RerserveAquiBtn } from "../ReserveAquiBtn/Index";
+import { RerserveAquiBtn } from "../ReserveAquiBtn";
+import {FooterContent, Footer as FooterTag} from './styles'
 
-import './Index.css'
 
 class Footer extends React.Component {
+
     render(){
+
+        const teste = 'red'
         return (
 
-            <footer>
+            <FooterTag>
 
-                <div class="footerContent">
+                <FooterContent bolinha={teste} banana batata uva>
 
                     <RerserveAquiBtn/>
 
@@ -35,9 +38,9 @@ class Footer extends React.Component {
 
                     </ul>
                     
-                </div>
+                </FooterContent>
 
-            </footer>
+            </FooterTag>
         )
     }
 }
