@@ -3,7 +3,7 @@ import {VerMaisBtn} from '../VerMaisBtn/Index.js'
 
 import './Index.css'
 
-import quarto3 from "../../../assets/img/quarto3.jpg"
+import quarto3 from "../../assets/img/quarto3.jpg"
 
 export const ImagensLista1 = () => {
     return (
