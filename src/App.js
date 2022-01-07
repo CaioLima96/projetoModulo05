@@ -1,5 +1,6 @@
 import { Quartos } from './pages/Quartos/Index.js';
 import Galeria from './pages/Galeria/Index.js';
+import { Experiencias } from './pages/Experiencias/Index.js';
 import { BrowserRouter,Route,Routes,Link } from "react-router-dom";
 
 import './App.css';
@@ -14,6 +15,7 @@ function App() {
 				<Routes>
 					<Route path="/galeria" element={<Galeria/>}/>
 					<Route path="/quartos" element={<Quartos/>}/>
+					<Route path="/experiencias" element={<Experiencias/>}/>
 					<Route path="" element={<Quartos/>}/>
 				</Routes>
 			</Layout>
