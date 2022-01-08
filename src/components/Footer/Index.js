@@ -29,6 +29,7 @@ const Footer = () => {
                     <li>Fale conosco</li>
                     <li>Reserva: 4002-8922</li>
                     <li>Duvidas: 2569-6969</li>
+                    <li>Email: hotelresiliapalace@gmail.com</li>
                     <li>Equipe</li>
 
                 </ul>
