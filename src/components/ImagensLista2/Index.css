@@ -1,0 +1,53 @@
+#expLista{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    list-style: none;
+}
+
+.expListaItem {
+    max-width: 450px;
+    width: 100%;
+    height: 353px;
+
+    position: relative;
+    overflow: hidden;
+
+    background-color: black;
+    margin: 1%;
+}
+
+.expListaImg {
+    width: 100%;
+    height: 292px;
+}
+
+.expListaImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.expListaInfo {
+    width: 80%;
+    
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+}
+
+.expListaInfo p {
+    font-size: 1.25rem;
+    margin: 1.125rem 0 2.375rem 0;
+}
+
+.expListaItem button {
+    color: black;
+}
