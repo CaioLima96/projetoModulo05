@@ -1,7 +1,8 @@
-import { Quartos } from './pages/Quartos/Index.js';
+import { Quartos } from './pages/Quartos';
 import Galeria from './pages/Galeria/Index.js';
 import { Experiencias } from './pages/Experiencias/Index.js';
 import { BrowserRouter,Route,Routes,Link } from "react-router-dom";
+
 
 import './App.css';
 import './styles/global.css'
