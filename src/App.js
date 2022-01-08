@@ -1,5 +1,6 @@
 import { Quartos } from './pages/Quartos';
 import Galeria from './pages/Galeria/Index.js';
+import  Home  from './pages/Home'
 import { Experiencias } from './pages/Experiencias/Index.js';
 import { BrowserRouter,Route,Routes,Link } from "react-router-dom";
 
@@ -14,6 +15,7 @@ function App() {
 		<BrowserRouter>
 			<Layout>
 				<Routes>
+					<Route path="/home" element={<Home/>}/>
 					<Route path="/galeria" element={<Galeria/>}/>
 					<Route path="/quartos" element={<Quartos/>}/>
 					<Route path="/experiencias" element={<Experiencias/>}/>
