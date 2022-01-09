@@ -5,7 +5,7 @@ import { ReserveAquiTab, Form} from "./styles";
 import "./styles.css"
 
 
-const Reservar = () => {
+const CarrinhoCompra = () => {
     return (
         <ReserveAquiTab className="showHideReserva">
 
@@ -129,4 +129,4 @@ const Reservar = () => {
     )
 }
 
-export default Reservar
+export default CarrinhoCompra
