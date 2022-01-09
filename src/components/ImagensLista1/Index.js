@@ -11,7 +11,7 @@ export const ImagensLista1 = () => {
         
             <ul id="quartosLista">
 
-                <li class="quartoListaItem">
+                {/* <li class="quartoListaItem">
 
                     <div class="quartoListaImg">
                         <img src={quarto3} alt="quarto"/>
@@ -61,7 +61,7 @@ export const ImagensLista1 = () => {
                         <VerMaisBtn/>
                     </div>
                     
-                </li>
+                </li> */}
 
             </ul>
         

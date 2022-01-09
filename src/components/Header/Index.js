@@ -12,6 +12,12 @@ const Header = () => {
         console.log('teste')
     }
 
+    // function showReservaTab(){
+    //     let reservaTab = document.getElementsByClassName('hideReserva')
+    //     reservaTab.classList.toggle('showHideReserva')
+    //     console.log("reservatab")
+    // }
+
     return (
 
         <header>
