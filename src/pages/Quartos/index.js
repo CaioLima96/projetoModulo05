@@ -7,7 +7,6 @@ import { VerMaisBtn } from "../../components/VerMaisBtn/Index"
 import { quartosImg } from "../../components/ArrayImg/arrayImg";
 
 import './styles.css'
-import quarto3 from "../../assets/img/quarto3.jpg";
 
 export const Quartos = () => {
 
@@ -29,8 +28,8 @@ export const Quartos = () => {
     }, []);
     // console.log(dados)
 
-	console.log(quartosImg)
-
+	<></>
+	
 	// let apiLoop = () => {
 	// 	var teste = () => {
 	// 		{for(let i = 0; i < quartosImg.length; i++){
@@ -63,10 +62,7 @@ export const Quartos = () => {
 
             <main>
 
-				<ul>
-					
-					{/* {apiLoop()} */}
-
+				<ImagensLista1>
 					{dados.map((item) => {
 						return (
 
@@ -84,10 +80,8 @@ export const Quartos = () => {
 							</li>
 						)
 					})}
+				</ImagensLista1>
 
-				</ul>
-
-                {/* <ImagensLista1/> */}
             </main>
             
         </>
