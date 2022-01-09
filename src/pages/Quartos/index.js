@@ -26,9 +26,9 @@ export const Quartos = () => {
     
         getRoom();
     }, []);
-    // console.log(dados)
+    console.log(dados)
 
-	<></>
+	
 	
 	// let apiLoop = () => {
 	// 	var teste = () => {
@@ -66,7 +66,7 @@ export const Quartos = () => {
 					{dados.map((item) => {
 						return (
 
-							<li class="quartoListaItem">
+							<li key={item.id} class="quartoListaItem">
 
 								<div class="quartoListaImg">
 									<img src={quartosImg[0].imgPath} alt="quarto"/>
