@@ -1,0 +1,34 @@
+*{ margin:0; padding:0; box-sizing: border-box; }
+
+body{
+    /* display: grid; */
+    place-items: center;
+    /* height: 100vh; */
+}
+
+#items-wrapper {
+    width: 100vw; /* Muda aqui  o tamanho*/
+}
+
+#items {
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.item{
+    flex:none;
+    width: 30%;
+    height: 400px;
+    scroll-snap-align: start;
+
+    pointer-events: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

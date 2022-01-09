@@ -9,7 +9,7 @@ export const HeroImg = () => {
 
         <div id="heroImg">
 
-            <h1>QUARTOS</h1>
+            {/* <h1>QUARTOS</h1> */}
 
         </div>
     )
