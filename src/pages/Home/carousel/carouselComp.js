@@ -1,18 +1,13 @@
 import React from 'react';
-import { HeroImg } from "../../components/HeroImg/Index";
-import { Carousel } from "./carousel/carouselComp"
-// import Layout from "../../components/Layout"
 
-import './styles.css'
+import "./carouselStyle.css";
 
-export default () => {
-  return (
-    <>
-      <HeroImg />
-      <main>
-        <>
-          <Carousel>
-          <section class="carousel" aria-label="Gallery">
+
+export const Carousel = ({ children }) => {
+    return (
+        <div id="componenteLeft">
+            {children}
+            {/* <section class="carousel" aria-label="Gallery">
                 <ol class="carousel__viewport">
 
                     <li id="carousel__slide1"
@@ -37,17 +32,10 @@ export default () => {
                     </li>
                 </ol>
             </section>
+            ,
             <div id="texto">
-                <p>Testes tstetststaafajafhhhhhhhhhssssssssssssssshhhh</p>
-            </div>
-            </Carousel>
-          {/* <Carousel />
-          <Carousel /> */}
-        </>
-      </main>
-      {/* <Layout/> PQ DUPLICOU? */}
-    </>
-  )
+                <p>Testes tstetststaafajafhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+            </div> */}
+        </div>
+    );
 }
-
-
