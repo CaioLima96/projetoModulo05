@@ -4,12 +4,12 @@ import './Index.css'
 
 // import quarto1 from "../../../assets/img/quarto1.jpg"
 
-export const HeroImg = () => {
+export const HeroImg = ({children}) => {
     return (
 
         <div id="heroImg">
 
-            <h1>QUARTOS</h1>
+            {children}
 
         </div>
     )
