@@ -1,46 +1,93 @@
 import React, {useState, useEffect} from "react";
-import { HeroImg } from "../../components/HeroImg/Index";
-import { ImagensLista1 } from "../../components/ImagensLista1/Index";
-import Reservar from '../../components/Reservar'
 import axios from "axios";
 
+import { HeroImg } from "../../components/HeroImg/Index";
+import { ImagensLista1 } from "../../components/ImagensLista1/Index";
+import { VerMaisBtn } from "../../components/VerMaisBtn/Index"
+import { quartosImg } from "../../components/ArrayImg/arrayImg";
+
 import './styles.css'
+import quarto3 from "../../assets/img/quarto3.jpg";
 
 export const Quartos = () => {
 
     const [dados, setDados] = useState([]);
 
-    const url = "https://apihotelresiliapalace.herokuapp.com/user"
+    const url = "https://apihotelresiliapalace.herokuapp.com/room"
 
     useEffect(() => {
-        const getDrinks = async () => {
-          try {
-            const response = await axios.get(url);
-            setDados(response);
-          } catch (error) {
-            console.log("tratar nosso erro aqui");
-          }
+        const getRoom = async () => {
+			try {
+				const response = await axios.get(url);
+				setDados(response.data);
+			} catch (error) {
+				console.log("tratar nosso erro aqui");
+			}
         };
-        // axios
-        //   .get(url)
-        //   .then((response) => {
-        //     setLoading(false);
-        //     setDados(response.data.drinks);
-        //   })
-        //   .catch((error) => {
-        //     console.log("tratar nosso erro aqui");
-        //   });
     
-        getDrinks();
+        getRoom();
     }, []);
-    console.log(dados)
+    // console.log(dados)
+
+	console.log(quartosImg)
+
+	// let apiLoop = () => {
+	// 	var teste = () => {
+	// 		{for(let i = 0; i < quartosImg.length; i++){
+	// 			{dados.map((item) => {
+	// 				return (
+
+	// 					<li class="quartoListaItem">
+
+	// 						<div class="quartoListaImg">
+	// 							<img src={quartosImg[0].imgPath} alt="quarto"/>
+	// 						</div>
+
+	// 						<div class="quartoListaInfo">
+	// 							<p>{item.tipo_de_quarto}</p>
+	// 							<VerMaisBtn/>
+	// 						</div>
+
+	// 					</li>
+	// 				)
+	// 			})}
+	// 		}}
+	// 	}
+
+	// 	return teste
+	// }
 
     return (
         <>
-            <HeroImg/>
+            <HeroImg />
 
             <main>
-                <ImagensLista1/>
+
+				<ul>
+					
+					{/* {apiLoop()} */}
+
+					{dados.map((item) => {
+						return (
+
+							<li class="quartoListaItem">
+
+								<div class="quartoListaImg">
+									<img src={quartosImg[0].imgPath} alt="quarto"/>
+								</div>
+
+								<div class="quartoListaInfo">
+									<p>{item.tipo_de_quarto}</p>
+									<VerMaisBtn/>
+								</div>
+
+							</li>
+						)
+					})}
+
+				</ul>
+
+                {/* <ImagensLista1/> */}
             </main>
             
         </>

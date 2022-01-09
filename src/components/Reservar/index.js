@@ -1,11 +1,13 @@
 import React from "react";
 import { RerserveAquiBtn } from "../ReserveAquiBtn";
+
 import { ReserveAquiTab, Form} from "./styles";
+import "./styles.css"
 
 
 const Reservar = () => {
     return (
-        <ReserveAquiTab>
+        <ReserveAquiTab className="showHideReserva">
 
             <RerserveAquiBtn/>
 
