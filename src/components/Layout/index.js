@@ -1,6 +1,6 @@
 import Footer from "../Footer/Index"
 import Header from "../Header/Index"
-import Reservar from "../Reservar"
+import CarrinhoCompra from "../CarrinhoCompras"
 
 function Layout ({children}) {
     return (
@@ -8,7 +8,7 @@ function Layout ({children}) {
             <Header/>
             {children}
             <Footer/>
-            <Reservar/>
+            <CarrinhoCompra/>
         </>
     )
 }

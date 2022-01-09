@@ -5,65 +5,28 @@ import './Index.css'
 
 import quarto3 from "../../assets/img/quarto3.jpg"
 
-export const ImagensLista1 = () => {
+export const ImagensLista1 = ({children}) => {
     return (
 
-        
-            <ul id="quartosLista">
+        <ul id="quartosLista">
 
-                {/* <li class="quartoListaItem">
+            {children}
 
-                    <div class="quartoListaImg">
-                        <img src={quarto3} alt="quarto"/>
-                    </div>
+            {/* EXEMPLO DO ITEM DA LISTA */}
+            {/* <li class="quartoListaItem">
 
-                    <div class="quartoListaInfo">
-                        <p>CASAL SIMPLES</p>
-                        <VerMaisBtn/>
-                    </div>
+                <div class="quartoListaImg">
+                    <img src={quarto3} alt="quarto"/>
+                </div>
 
-                </li>
+                <div class="quartoListaInfo">
+                    <p>CASAL SIMPLES</p>
+                    <VerMaisBtn/>
+                </div>
 
-                <li class="quartoListaItem">
+            </li> */}
 
-                    <div class="quartoListaImg">
-                        <img src={quarto3} alt="quarto"/>
-                    </div>
-
-                    <div class="quartoListaInfo">
-                        <p>CASAL SIMPLES</p>
-                        <VerMaisBtn/>
-                    </div>
-                    
-                </li>
-
-                <li class="quartoListaItem">
-
-                    <div class="quartoListaImg">
-                        <img src={quarto3} alt="quarto"/>
-                    </div>
-
-                    <div class="quartoListaInfo">
-                        <p>CASAL SIMPLES</p>
-                        <VerMaisBtn/>
-                    </div>
-                    
-                </li>
-
-                <li class="quartoListaItem">
-
-                    <div class="quartoListaImg">
-                        <img src={quarto3} alt="quarto"/>
-                    </div>
-
-                    <div class="quartoListaInfo">
-                        <p>CASAL SIMPLES</p>
-                        <VerMaisBtn/>
-                    </div>
-                    
-                </li> */}
-
-            </ul>
+        </ul>
         
     )
 }
