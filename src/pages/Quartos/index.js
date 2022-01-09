@@ -59,7 +59,7 @@ export const Quartos = () => {
 
     return (
         <>
-            <HeroImg />
+            <HeroImg><h1>QUARTOS</h1></HeroImg>
 
             <main>
 
