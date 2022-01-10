@@ -8,6 +8,7 @@ import { BrowserRouter,Route,Routes,Link } from "react-router-dom";
 import './App.css';
 import './styles/global.css'
 import Layout from './components/Layout/index.js';
+import { Adm } from './pages/Adm/index';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 					<Route path="/quartos" element={<Quartos/>}/>
 					<Route path="/experiencias" element={<Experiencias/>}/>
 					<Route path="" element={<Home/>}/>
+					<Route path="/adm" element={<Adm/>}/>
 				</Routes>
 			</Layout>
 		</BrowserRouter>

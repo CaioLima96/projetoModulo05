@@ -33,3 +33,7 @@ main {
         width: 90%;
     } 
 }
+
+.showHideReserva{
+    display: flex !important;
+}
