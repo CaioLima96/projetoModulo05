@@ -7,6 +7,10 @@ export const CardsLista = styled.ul `
     
     list-style: none;
 
+    #loader {
+        margin: 0 auto;
+    }
+
     .cardsListaItem {
         max-width: 450px;
         width: 100%;
