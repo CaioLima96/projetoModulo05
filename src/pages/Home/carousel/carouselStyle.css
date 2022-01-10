@@ -19,6 +19,12 @@
     box-sizing: border-box;
 }
 
+hr{
+    
+  height: 1px;
+  background-image: linear-gradient(to right,rgb(255, 255, 255), rgba(0, 0, 0, 0.75), rgb(255, 255, 255));
+}
+
 @keyframes tonext {
     75% {
       left: 0;

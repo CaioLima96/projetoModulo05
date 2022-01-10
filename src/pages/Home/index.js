@@ -8,7 +8,7 @@ import './styles.css'
 export default () => {
   return (
     <>
-      <HeroImg />
+      <HeroImg><h1>LAZER DE QUALIDADE</h1></HeroImg>
       <main>
         <>
           <Carousel>
@@ -38,7 +38,9 @@ export default () => {
                 </ol>
             </section>
             <div id="texto">
-                <p>Testes tstetststaafajafhhhhhhhhhssssssssssssssshhhh</p>
+              <h1>Quartos</h1>
+              <hr></hr>
+              <p>Testes tstetststaafajafhhhhhhhhhssssssssssssssshhhh</p>
             </div>
             </Carousel>
           {/* <Carousel />
