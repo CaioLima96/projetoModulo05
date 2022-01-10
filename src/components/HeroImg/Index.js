@@ -1,16 +1,14 @@
 import React from "react";
 
-import './Index.css'
-
-// import quarto1 from "../../../assets/img/quarto1.jpg"
+import { HeroImgContainer } from "./styles";
 
 export const HeroImg = ({children}) => {
     return (
 
-        <div id="heroImg">
+        <HeroImgContainer id="heroImg">
 
             {children}
 
-        </div>
+        </HeroImgContainer>
     )
 }

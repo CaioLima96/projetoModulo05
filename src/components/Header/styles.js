@@ -11,13 +11,14 @@ export const Header = styled.header `
         display: none;
     }
 
-    .hideShowBtn {
-        display: block !important;
-    }
 
     @media (max-width: 600px) {
         display: initial;
         z-index: 1;
+
+        .hideShowBtn {
+            display: block !important;
+        }
 
         #navMenu > div {
             display: flex;
