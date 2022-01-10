@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeroImg } from "../../components/HeroImg/Index";
+import { HeroImg } from "../../components/HeroImg";
 import { Carousel } from "./carousel/carouselComp"
 // import Layout from "../../components/Layout"
 
