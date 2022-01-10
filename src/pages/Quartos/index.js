@@ -65,7 +65,6 @@ export const Quartos = () => {
 
             <main>
 
-				<Loading/>
 				<CardLista1>
 					{loading && <><Loading/></>}
 					{dados.map((item) => {
