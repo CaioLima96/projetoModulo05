@@ -1,5 +1,6 @@
-import Footer from "../Footer/Index"
-import Header from "../Header/Index"
+import Header from "../Header/index"
+import Footer from "../Footer/index"
+import CarrinhoCompra from "../CarrinhoCompras"
 
 function Layout ({children}) {
     return (
@@ -7,6 +8,7 @@ function Layout ({children}) {
             <Header/>
             {children}
             <Footer/>
+            <CarrinhoCompra/>
         </>
     )
 }

@@ -7,7 +7,7 @@ export const HeroImg = ({children}) => {
 
         <HeroImgContainer id="heroImg">
 
-            {/* <h1>QUARTOS</h1> */}
+            {children}
 
         </HeroImgContainer>
     )
