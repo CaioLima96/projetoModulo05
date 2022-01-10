@@ -3,7 +3,7 @@ import axios from "axios";
 
 import { HeroImg } from "../../components/HeroImg";
 import { CardLista1 } from "../../components/CardLista1";
-import { VerMaisBtn } from "../../components/VerMaisBtn/Index"
+import { VerMaisBtn } from "../../components/VerMaisBtn"
 import { quartosImg } from "../../components/ArrayImg/arrayImg";
 
 import './styles.css'

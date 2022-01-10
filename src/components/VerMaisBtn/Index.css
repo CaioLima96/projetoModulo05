@@ -1,8 +1,0 @@
-#verMaisBtn {
-    font-size: 1.125rem;
-    padding: 0.406rem 2rem;
-}
-
-#verMaisBtn:hover{
-    background-color: var(--grey1);
-}
