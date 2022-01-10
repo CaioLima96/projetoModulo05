@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const LoadingContainer = styled.div`
     text-align: center;
+    margin-bottom: 20px;
 
     p {
         margin: 1rem 0;
