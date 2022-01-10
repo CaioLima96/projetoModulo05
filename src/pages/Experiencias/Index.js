@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 
 import { ImagensLista2} from "../../components/ImagensLista2/Index";
-import { HeroImg } from "../../components/HeroImg/index";
+import { HeroImg } from "../../components/HeroImg";
 
 import './Index.css'
 

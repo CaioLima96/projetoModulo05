@@ -1,14 +1,32 @@
 import React from "react";
 import { RerserveAquiBtn } from "../ReserveAquiBtn";
+import axios from "axios";
 
 import { ReserveAquiTab, Form} from "./styles";
-import "./styles.css"
+
+// function Cadastrar(){
+//     const url = "https://apihotelresiliapalace.herokuapp.com/booking"
+
+//     axios.post('/user', {
+//         firstName: 'Fred',
+//         lastName: 'Flintstone'
+//       })
+//       .then(function (response) {
+//         console.log(response);
+//       })
+//       .catch(function (error) {
+//         console.log(error);
+//       });
+// }
+
+const CarrinhoCompra = ({mostra, mostraCarrinho}) => {
 
 
-const CarrinhoCompra = () => {
+    
     return (
-        <ReserveAquiTab className="showHideReserva">
+        <ReserveAquiTab className={mostra ? 'showHideReserva': ''}>
 
+            <><p onClick={() => mostraCarrinho()}>X</p><br/></>
             <RerserveAquiBtn/>
 
             <Form>

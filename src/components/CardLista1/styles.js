@@ -7,6 +7,10 @@ export const CardsLista = styled.ul `
     
     list-style: none;
 
+    #loader {
+        margin: 0 auto;
+    }
+
     .cardsListaItem {
         max-width: 450px;
         width: 100%;
@@ -52,5 +56,21 @@ export const CardsLista = styled.ul `
 
     .cardsListaItem button {
         color: black;
+    }
+
+    @media(max-width: 500px){
+        
+        .cardsListaItem {
+            margin: 0 0 1rem 0;
+        }
+    }
+
+    @media(max-width: 1190px) {
+
+        justify-content: center;
+
+        .cardsListaItem {
+            max-width: 379px;
+        }
     }
 `
