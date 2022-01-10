@@ -1,16 +1,22 @@
-import React, {useState} from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { RerserveAquiBtn } from "../ReserveAquiBtn";
 
 import { Header as HeaderTag, NavBarLista } from "./styles";
 
-const Header = ({mostraCarrinho}) => {
+const Header = () => {
     
     function myNavBar() {
         let lista = document.getElementById("navBarLista")
         lista.classList.toggle('hideShowBtn')
         console.log('teste')
     }
+
+    // function showReservaTab(){
+    //     let reservaTab = document.getElementsByClassName('hideReserva')
+    //     reservaTab.classList.toggle('showHideReserva')
+    //     console.log("reservatab")
+    // }
 
     return (
 
@@ -27,14 +33,13 @@ const Header = ({mostraCarrinho}) => {
                     {/* <li>
                         <Link to="/">Hotel Resilia Palace</Link>
                     </li> */}
-                    <li><Link to="/adm">ADM</Link></li>
                     <li><Link to="/Home">Home</Link></li>
                     <li><Link to="/quartos">Quartos</Link></li>
                     <li><a href="/">Eventos</a></li>
                     <li><a href="/experiencias">Experiências</a></li>
                     <li><Link to="/galeria">Galeria</Link></li>
                     <li><a href="/">Fale Conosco</a></li>
-                    <li onClick={() => mostraCarrinho()}><RerserveAquiBtn/></li>
+                    <li><RerserveAquiBtn/></li>
                 </NavBarLista>
 
             </nav>
