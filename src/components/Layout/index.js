@@ -17,6 +17,13 @@ function Layout ({children}) {
             setMostra(false)
         }
         console.log(mostra)
+
+        hideMenu()
+    }
+
+    function hideMenu() {
+        let lista = document.getElementById("navBarLista")
+        lista.classList.remove('hideShowBtn')
     }
 
     return (
@@ -24,7 +31,7 @@ function Layout ({children}) {
             <Header mostraCarrinho={showReservaTab} />
             {children}
             <Footer/>
-            <CarrinhoCompra mostra={mostra}/>
+            <CarrinhoCompra mostra={mostra} mostraCarrinho={showReservaTab}/>
         </>
     )
 }
