@@ -6,6 +6,7 @@ import { CardLista1 } from "../../components/CardLista1";
 import { VerMaisBtn } from "../../components/VerMaisBtn"
 import { quartosImg } from "../../components/ArrayImg/arrayImg";
 import Loading from "../../components/LoadingAnimation";
+import CarrinhoCompra from '../../components/CarrinhoCompras'
 
 import './styles.css'
 
@@ -64,7 +65,6 @@ export const Quartos = () => {
             <HeroImg><h1>QUARTOS</h1></HeroImg>
 
             <main>
-
 				<CardLista1>
 					{loading && <><Loading/></>}
 					{dados.map((item) => {
