@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { RerserveAquiBtn } from "../ReserveAquiBtn";
 
 import { Header as HeaderTag, NavBarLista } from "./styles";
-// import './Index.css'
 
 const Header = () => {
     
