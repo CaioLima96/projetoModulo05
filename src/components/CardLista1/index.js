@@ -1,32 +1,32 @@
 import React from "react";
 import {VerMaisBtn} from '../VerMaisBtn/Index.js'
 
-import './Index.css'
+import { CardsLista } from "./styles.js";
 
 import quarto3 from "../../assets/img/quarto3.jpg"
 
-export const ImagensLista1 = ({children}) => {
+export const CardLista1 = ({children}) => {
     return (
 
-        <ul id="quartosLista">
+        <CardsLista id="quartosLista">
 
             {children}
 
             {/* EXEMPLO DO ITEM DA LISTA */}
-            {/* <li class="quartoListaItem">
+            {/* <li className="cardsListaItem">
 
-                <div class="quartoListaImg">
+                <div className="cardsListaImg">
                     <img src={quarto3} alt="quarto"/>
                 </div>
 
-                <div class="quartoListaInfo">
+                <div className="cardsListaInfo">
                     <p>CASAL SIMPLES</p>
                     <VerMaisBtn/>
                 </div>
 
             </li> */}
 
-        </ul>
+        </CardsLista>
         
     )
 }

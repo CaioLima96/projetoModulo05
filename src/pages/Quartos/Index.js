@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 
-import { HeroImg } from "../../components/HeroImg/Index";
-import { ImagensLista1 } from "../../components/ImagensLista1/Index";
+import { HeroImg } from "../../components/HeroImg";
+import { CardLista1 } from "../../components/CardLista1";
 import { VerMaisBtn } from "../../components/VerMaisBtn/Index"
 import { quartosImg } from "../../components/ArrayImg/arrayImg";
 
@@ -26,9 +26,9 @@ export const Quartos = () => {
     
         getRoom();
     }, []);
-    // console.log(dados)
+    console.log(dados)
 
-	<></>
+
 	
 	// let apiLoop = () => {
 	// 	var teste = () => {
@@ -62,17 +62,17 @@ export const Quartos = () => {
 
             <main>
 
-				<ImagensLista1>
+				<CardLista1>
 					{dados.map((item) => {
 						return (
 
-							<li class="quartoListaItem">
+							<li key={item.id} className="cardsListaItem">
 
-								<div class="quartoListaImg">
+								<div className="cardsListaImg">
 									<img src={quartosImg[0].imgPath} alt="quarto"/>
 								</div>
 
-								<div class="quartoListaInfo">
+								<div className="cardsListaInfo">
 									<p>{item.tipo_de_quarto}</p>
 									<VerMaisBtn/>
 								</div>
@@ -80,7 +80,7 @@ export const Quartos = () => {
 							</li>
 						)
 					})}
-				</ImagensLista1>
+				</CardLista1>
 
             </main>
             
