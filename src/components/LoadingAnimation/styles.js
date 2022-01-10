@@ -9,7 +9,8 @@ export const LoadingContainer = styled.div`
 `
 
 export const LoadingAnimation = styled.div`
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     margin: 0 auto;
 
     transform: skewX(-45deg);
