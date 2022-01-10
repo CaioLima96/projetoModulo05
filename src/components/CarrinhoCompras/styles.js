@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ReserveAquiTab = styled.div`
 
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 

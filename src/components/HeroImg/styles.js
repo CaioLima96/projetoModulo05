@@ -1,4 +1,6 @@
-#heroImg {
+import styled from 'styled-components'
+
+export const HeroImgContainer = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,23 +13,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
 
-h1 {
-    font-size: 3.125rem;
-}
-/* 
-@media(max-width: 1024px){
-
-    #heroImg{
-        height: 90%;
-        background-position: center;
+    h1 {
+        font-size: 3.125rem;
     }
-}
-
-@media(min-width: 1025px) {
-
-    #heroImg{
-        height: 80vh;
-    }
-} */
+`

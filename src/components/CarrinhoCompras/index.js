@@ -1,11 +1,13 @@
 import React from "react";
 import { RerserveAquiBtn } from "../ReserveAquiBtn";
+
 import { ReserveAquiTab, Form} from "./styles";
+import "./styles.css"
 
 
-const Reservar = () => {
+const CarrinhoCompra = () => {
     return (
-        <ReserveAquiTab>
+        <ReserveAquiTab className="showHideReserva">
 
             <RerserveAquiBtn/>
 
@@ -127,4 +129,4 @@ const Reservar = () => {
     )
 }
 
-export default Reservar
+export default CarrinhoCompra
