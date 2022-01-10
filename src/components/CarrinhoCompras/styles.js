@@ -9,6 +9,10 @@ export const ReserveAquiTab = styled.div`
     max-width: 380px;
     width: 100%;
 
+    position: absolute;
+    right: 0;
+    top: 7.9%;
+
     padding: 1.25rem;
     background-color: white;
 

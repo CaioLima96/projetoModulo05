@@ -1,10 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { RerserveAquiBtn } from "../ReserveAquiBtn";
 
 import { Header as HeaderTag, NavBarLista } from "./styles";
 
-const Header = () => {
+const Header = ({mostraCarrinho}) => {
     
     function myNavBar() {
         let lista = document.getElementById("navBarLista")
@@ -39,7 +39,7 @@ const Header = () => {
                     <li><a href="/experiencias">Experiências</a></li>
                     <li><Link to="/galeria">Galeria</Link></li>
                     <li><a href="/">Fale Conosco</a></li>
-                    <li><RerserveAquiBtn/></li>
+                    <li onClick={() => mostraCarrinho()}><RerserveAquiBtn/></li>
                 </NavBarLista>
 
             </nav>

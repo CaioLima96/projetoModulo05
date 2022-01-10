@@ -19,13 +19,14 @@ import { ReserveAquiTab, Form} from "./styles";
 //       });
 // }
 
-const CarrinhoCompra = ({mostra}) => {
+const CarrinhoCompra = ({mostra, mostraCarrinho}) => {
 
 
     
     return (
         <ReserveAquiTab className={mostra ? 'showHideReserva': ''}>
 
+            <><p onClick={() => mostraCarrinho()}>X</p><br/></>
             <RerserveAquiBtn/>
 
             <Form>
