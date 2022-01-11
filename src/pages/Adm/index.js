@@ -15,6 +15,16 @@ export const Adm = () => {
 
     const [dados, setDados] = useState([]);
 	const [loading, setLoading] = useState(true);
+	const [mostraForm, setMostraForm] = useState(false)
+
+	function showForm(){
+        if(!mostraForm) {
+            setMostraForm(true)
+        } else {
+            setMostraForm(false)
+        }
+        console.log(mostraForm)
+    }
 
     const url = "https://apihotelresiliapalace.herokuapp.com/event"
 
@@ -54,6 +64,19 @@ export const Adm = () => {
 		)
 	}
 
+	// const deleteEvente = async () => {
+	// 	await axios.post(`https://apihotelresiliapalace.herokuapp.com/event/${id}`,
+	// 		{
+	// 			id: 
+	// 		}
+	// 		.then((response) => {
+	// 			alert(response)
+	// 		})
+	// 		.catch((error) => {
+	// 			alert(error)
+	// 		})
+	// 	)
+	// }
 
     console.log(dados)
 
@@ -80,9 +103,9 @@ export const Adm = () => {
 		
 			<AdmMain className="admMain">
 
-				<ReserveAquiBtn>ADICIONAR EVENTO</ReserveAquiBtn>
+				<ReserveAquiBtn onClick={() => showForm()}>ADICIONAR EVENTO</ReserveAquiBtn>
 
-				<EventoForm id="eventoForm">
+				<EventoForm id="eventoForm" className={mostraForm ? 'showHideReserva': ''} >
 					<div className="input-field">
                         <label htmlFor="nomeEvento">Nome evento</label>
                         <input id="nomeEvento" type="text" placeholder="Digite o nome do evento aqui" required></input>

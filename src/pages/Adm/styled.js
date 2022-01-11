@@ -8,6 +8,7 @@ export const AdmMain = styled.main`
     button {
         align-self: center;
     }
+    
 `
 
 export const AdmTab = styled.div`
@@ -60,6 +61,7 @@ export const AdmInfo = styled.div `
 `
 
 export const EventoForm = styled.form `
+
 
     .input-field {
         display: flex;
