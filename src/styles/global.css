@@ -14,6 +14,9 @@ body {
 
 :root {
     --grey1: #efefefa6;
+    --loadingBg: #edd1aa;
+    --loadingItem1: #DDCA7D;
+    --loadingItem2: #B88B4A;
 }
 
 
@@ -29,4 +32,8 @@ main {
     main{
         width: 90%;
     } 
+}
+
+.showHideReserva{
+    display: flex !important;
 }

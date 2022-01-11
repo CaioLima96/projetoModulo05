@@ -1,10 +1,10 @@
 import React from "react";
 
-import './Index.css'
+import { ReserveAquiBtn } from "./styles";
 
-export const RerserveAquiBtn = () => {
+export const RerserveAquiBtn = ({children}) => {
     return (
 
-        <button id="reserveAquiBtn">RESERVE AQUI</button>
+        <ReserveAquiBtn id="reserveAquiBtn">{children}</ReserveAquiBtn>
     )
 }
