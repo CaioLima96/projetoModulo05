@@ -25,6 +25,13 @@ export const ReserveAquiTab = styled.div`
     form:not(form:last-child){
         margin-bottom: 5rem;
     }
+
+    
+    @media (max-width: 600px) {
+        max-width: 800px;
+        height: 100vh;
+        overflow-y: scroll;
+    }
 `
 
 export const Form = styled.form`
@@ -70,5 +77,4 @@ export const Form = styled.form`
             height: 35px;
         }
     }
-    
 `

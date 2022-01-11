@@ -26,8 +26,7 @@ const CarrinhoCompra = ({mostra, mostraCarrinho}) => {
     return (
         <ReserveAquiTab className={mostra ? 'showHideReserva': ''}>
 
-            <><p onClick={() => mostraCarrinho()}>X</p><br/></>
-            <RerserveAquiBtn/>
+            <><p onClick={() => mostraCarrinho()}>Fechar X</p><br/></>
 
             <Form>
 
@@ -142,6 +141,8 @@ const CarrinhoCompra = ({mostra, mostraCarrinho}) => {
                 </span>
 
             </Form>
+
+            <RerserveAquiBtn/>
 
         </ReserveAquiTab>
     )
