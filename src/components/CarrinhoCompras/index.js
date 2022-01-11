@@ -143,7 +143,7 @@ const CarrinhoCompra = ({mostra, mostraCarrinho}) => {
                 </Form>
             </form>
 
-            <RerserveAquiBtn/>
+            <RerserveAquiBtn>RESERVAR</RerserveAquiBtn>
 
             <><p onClick={() => mostraCarrinho()}>Fechar X</p><br/></>
 

@@ -37,11 +37,12 @@ export const ReserveAquiTab = styled.div`
     } */
 
     div {
-        margin-bottom: 5rem; 
+        margin-bottom: 4.375rem; 
     }
     
     @media (max-width: 600px) {
         max-width: 800px;
+        box-shadow: -10px 10px 22px 10px rgb(0 0 0 / 75%);
         /* height: 100vh;
         overflow-y: scroll; */
     }
