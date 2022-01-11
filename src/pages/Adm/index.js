@@ -2,14 +2,14 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 
 import { CardLista1 } from "../../components/CardLista1";
-import { VerMaisBtn } from "../../components/VerMaisBtn"
 import { quartosImg } from "../../components/ArrayImg/arrayImg";
 import Loading from "../../components/LoadingAnimation";
+import { ReserveAquiBtn } from "../../components/ReserveAquiBtn"
 
 import quarto3 from "../../assets/img/quarto3.jpg"
 
 import './styles.css'
-import { AdmTab, AdmImg, AdmInfo } from "./styled";
+import { AdmMain, AdmTab, AdmImg, AdmInfo, EventoForm } from "./styled";
 
 export const Adm = () => {
 
@@ -35,15 +35,15 @@ export const Adm = () => {
 	const postEvent = async () => {
 		await axios.post(`https://apihotelresiliapalace.herokuapp.com/event`,
 			{
-				nome: document.getElementById('nome').value,
+				nome: document.getElementById('nomeEvento').value,
                 data_inicio: document.getElementById('dataInicio').value,
                 data_fim: document.getElementById('dataFim').value,
                 qtd_pessoas: document.getElementById('qtdPessoas').value,
-                valor_event: document.getElementById('valor').value,
+                valor_event: document.getElementById('valorEvento').value,
                 faixa_etaria: document.getElementById('idade').value,
-                descricao: document.getElementById('descricao').value,
-                duracao: document.getElementById('duracao').value,
-                local_event: document.getElementById('local').value,
+                descricao: document.getElementById('descricaoEvento').value,
+                duracao: document.getElementById('duracaoEvento').value,
+                local_event: document.getElementById('localEvento').value,
 			}
 			.then((response) => {
 				alert(response)
@@ -77,13 +77,58 @@ export const Adm = () => {
 				</div>
 
 			</AdmTab>
-			
-			<main className="admRow">
-				<button>ADICIONAR EVENTO</button>
-				<form>
-					<label >NOME</label>
-					<input id="nome" onClick={() => postEvent()}></input>
-				</form>
+		
+			<AdmMain className="admMain">
+
+				<ReserveAquiBtn>ADICIONAR EVENTO</ReserveAquiBtn>
+
+				<EventoForm id="eventoForm">
+					<div className="input-field">
+                        <label htmlFor="nomeEvento">Nome evento</label>
+                        <input id="nomeEvento" type="text" placeholder="Digite o nome do evento aqui" required></input>
+                    </div>
+
+					<div className="input-field">
+                        <label htmlFor="dataInicio">Data de inicio</label>
+                        <input id="dataInicio" type="date" placeholder="Escolha a data de inicio" required></input>
+                    </div>
+
+					<div className="input-field">
+                        <label htmlFor="dataFim">Data de fim</label>
+                        <input id="dataFim" type="date" placeholder="Escolha a data de inicio" required></input>
+                    </div>
+
+					<div className="input-field">
+                        <label htmlFor="qtdPessoas">Qtd pessoas</label>
+                        <input id="qtdPessoas" type="number" placeholder="Qtd de pessoas" required></input>
+                    </div>
+
+					<div className="input-field">
+                        <label htmlFor="valorEvento">Valor do evento</label>
+                        <input id="valorEvento" type="number" placeholder="Digite o valor do evento aqui" required></input>
+                    </div>
+
+					<div className="input-field">
+                        <label htmlFor="valorEvento">Faixa etária</label>
+                        <input id="idade" type="text" placeholder="Digite a faixa etária aqui" required></input>
+                    </div>
+
+					<div className="input-field">
+                        <label htmlFor="descricaoEvento">Descrição do evento</label>
+                        <input id="descricaoEvento" type="text" placeholder="Digite a descrição do evento aqui" required></input>
+                    </div>
+
+					<div className="input-field">
+                        <label htmlFor="duracaoEvento">Duração do evento</label>
+                        <input id="duracaoEvento" type="time" placeholder="Digite a duração do evento aqui" required></input>
+                    </div>
+
+					<div className="input-field">
+                        <label htmlFor="localEvento">Duração do evento</label>
+                        <input id="localEvento" type="text" placeholder="Digite a duração do evento aqui" required></input>
+                    </div>
+				</EventoForm>
+
 				<CardLista1>
 					{loading && <><Loading/></>}
 					{dados.map((item) => {
@@ -105,7 +150,7 @@ export const Adm = () => {
 					})}
 				</CardLista1>
 
-			</main>
+			</AdmMain>
 
 		</>
        

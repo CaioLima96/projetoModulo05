@@ -1,3 +1,8 @@
 /* #root {
     grid-template-rows: 60px 1fr 1fr 245px !important;
 } */
+
+/* #eventoForm .input-field {
+    display: flex;
+    flex-direction: column;
+} */
