@@ -14,7 +14,17 @@ export const ReserveAquiTab = styled.div`
     top: 7.9%;
 
     padding: 1.25rem;
+    box-shadow: -10px 10px 22px -8px rgb(0 0 0 / 75%);
     background-color: white;
+
+    p {
+        align-self: flex-end;
+        cursor: pointer;
+    }
+
+    p:not(p:first-child) {
+        align-self: flex-start;
+    }
 
     button {
         width: 100%;
@@ -22,22 +32,34 @@ export const ReserveAquiTab = styled.div`
         margin-bottom: 4.125rem;
     }
 
-    form:not(form:last-child){
+    /* form:not(form:last-child){
         margin-bottom: 5rem;
-    }
+    } */
 
+    div {
+        margin-bottom: 4.375rem; 
+    }
     
     @media (max-width: 600px) {
         max-width: 800px;
-        height: 100vh;
+        box-shadow: -10px 10px 22px 10px rgb(0 0 0 / 75%);
+        /* height: 100vh;
+        overflow-y: scroll; */
+    }
+
+    @media(min-width: 763px) {
+        position: fixed;
+        height: 100%;
         overflow-y: scroll;
+        z-index: 3;
+        top: 0;
     }
 `
 
-export const Form = styled.form`
+export const Form = styled.div`
 
     width: 75.3%;
-
+    margin: 0 auto;
 
     span {
         display: flex;
