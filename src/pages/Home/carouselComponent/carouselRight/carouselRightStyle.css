@@ -1,10 +1,10 @@
 #componenteRight{
     display:flex;
-    flex-flow: column wrap-reverse;
-    flex-basis: auto;
-    justify-content:center;
-    height:350px;
+    align-content:center;
+    justify-content:space-between;
+    height:20rem;
     width:100%;
+    
 }
 .carousel { 
     filter: drop-shadow(0 0 10px #0003);
@@ -16,6 +16,7 @@
 
 #texto{
     height:20%;   
+      width:45%;
     align-self: center;
     text-align: center;
 }
@@ -142,6 +143,31 @@ hr{
     height: 100%;
     scroll-snap-align: center;
   }
+
+  @media(max-width: 800px) {
+    #componenteRight{
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 3rem;
+  }
+
+.carousel { 
+  height: 80%;
+  width: 90%;
+  align-self: center;
+  text-align: center;
+}
+
+
+#texto{
+  height:20%;  
+  width: 70%; 
+  align-self: center;
+  text-align: center;
+}
+  
+
+}
   
   @media (hover: hover) {
     .carousel__snapper {

@@ -1,24 +1,23 @@
-#componenteLeft{
+#componenteCentro{
     display:flex;
-    /* flex-wrap:wrap;   */
-    align-content:center;
-    justify-content:space-between;
-    height:20rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    height:30rem;
     width:100%;
+    margin-bottom: 3rem;
 }
-.carousel { 
+.carouselCentro { 
     filter: drop-shadow(0 0 10px #0003);
     perspective: 1px;
-    height:90%;
-    width:50%;
-  }
-  
+    height:100%;
+    width:90%;
+    
+  } 
 
-#texto{
-    height:10%; 
-    width:45%; 
+#textoCentro{
+    height:30%; 
+    width:70%; 
     text-align: center;
-    align-content: center;
 }
 
 hr{
@@ -144,7 +143,7 @@ hr{
     scroll-snap-align: center;
   }
 
-    @media(max-width: 800px) { 
+    /* @media(max-width: 800px) { 
 
     #componenteLeft{
       display: flex;
@@ -166,7 +165,7 @@ hr{
   align-self: center;
   text-align: center;
 }
-}
+} */
   
   @media (hover: hover) {
     .carousel__snapper {
