@@ -1,3 +1,4 @@
+import React from 'react'
 import { Quartos } from './pages/Quartos';
 import Galeria from './pages/Galeria/Index.js';
 import  Home  from './pages/Home'

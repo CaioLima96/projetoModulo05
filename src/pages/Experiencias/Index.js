@@ -1,73 +1,67 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import { ImagensLista2} from "../../components/ImagensLista2/Index";
+import { CardLista1 } from "../../components/CardLista1";
 import { HeroImg } from "../../components/HeroImg";
+import { VerMaisBtn } from "../../components/VerMaisBtn";
+import { quartosImg } from "../../components/ArrayImg/arrayImg";
+import Loading from "../../components/LoadingAnimation";
 
 import './Index.css'
 
 export const Experiencias = () => {
-//     return (
-//         <>
-//             <HeroImg/> 
-            
-//           <main>
-//               <ImagensLista2/>
 
-              
-//           </main>
+    const [dados, setDados] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-//         </>
-//     )
-// 
-const [dados, setDados] = useState([]);
+    const url = "https://apihotelresiliapalace.herokuapp.com/experience"
 
-const url = "https://apihotelresiliapalace.herokuapp.com/experiencias"
+    useEffect(() => {
+        const getExperiencias = async () => {
+            try {
+                const response = await axios.get(url);
+                setLoading(false);
+                setDados(response.data);
+            } catch (error) {
+                console.log("tratar nosso erro aqui");
+            }
+        };
 
-useEffect(() => {
-    const getExperiencias = async () => {
-        try {
-            const response = await axios.get(url);
-            setDados(response.data);
-        } catch (error) {
-            console.log("tratar nosso erro aqui");
-        }
-    };
-
-    getExperiencias();
-}, []);
-console.log(dados)
+        getExperiencias();
+    }, []);
+    console.log(dados)
 
 
 
-return (
-    <>
-        <HeroImg><h1>Experiências</h1></HeroImg>
+    return (
+        <>
+            <HeroImg><h1>Experiências</h1></HeroImg>
 
-        <main>
+            <main>
 
-            <ImagensLista2>
-                {dados.map((item) => {
-                    return (
+                <CardLista1>
+                {loading && <><Loading/></>}
+                    {dados.map((item) => {
+                        return (
 
-                        <li key={item.id} className="imagemListaItem">
+                            <li key={item.id} className="imagemListaItem">
 
-                            <div className="imagemListaImg">
-                                <img src={expImg[0].imgPath} alt="experiencias"/>
-                            </div>
+                                <div className="imagemListaImg">
+                                    <img src={quartosImg[0].imgPath} alt="experiencias" />
+                                </div>
 
-                            <div className="cardsListaInfo">
-                                <p>{item.experiencias}</p>
-                                <VerMaisBtn/>
-                            </div>
+                                <div className="cardsListaInfo">
+                                    <p>{item.nome}</p>
+                                    <VerMaisBtn />
+                                </div>
 
-                        </li>
-                    )
-                })}
-            </ImagensLista2>
+                            </li>
+                        )
+                    })}
+                </CardLista1>
 
-        </main>
-        
-    </>
-)
+            </main>
+
+        </>
+    )
 }
