@@ -65,6 +65,7 @@ export const Quartos = () => {
             <HeroImg><h1>QUARTOS</h1></HeroImg>
 
             <main>
+			<Loading/>
 				<CardLista1>
 					{loading && <><Loading/></>}
 					{dados.map((item) => {

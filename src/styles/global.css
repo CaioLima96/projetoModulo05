@@ -15,9 +15,13 @@ body {
 :root {
     --grey1: #efefefa6;
     --loadingBg: #edd1aa;
-    --loadingItem1: #DDCA7D;
-    --loadingItem2: #B88B4A;
+    --brown1: #ECC389;
+    --brown2: #E8A241;
+    --brown3: #BC8334;
+    --brown4: #B47F33;
+    --brown5: #6A563D;
 }
+
 
 
 main {
