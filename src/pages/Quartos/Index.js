@@ -65,7 +65,7 @@ export const Quartos = () => {
             <HeroImg><h1>QUARTOS</h1></HeroImg>
 
             <main>
-			<Loading/>
+				
 				<CardLista1>
 					{loading && <><Loading/></>}
 					{dados.map((item) => {
@@ -74,7 +74,7 @@ export const Quartos = () => {
 							<li key={item.id} className="cardsListaItem">
 
 								<div className="cardsListaImg">
-									<img src={quartosImg[0].imgPath} alt="quarto"/>
+									<img src={quartosImg[3].imgPath} alt="quarto"/>
 								</div>
 
 								<div className="cardsListaInfo">
