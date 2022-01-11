@@ -29,8 +29,8 @@ export const ReserveAquiTab = styled.div`
     
     @media (max-width: 600px) {
         max-width: 800px;
-        height: 100vh;
-        overflow-y: scroll;
+        /* height: 100vh;
+        overflow-y: scroll; */
     }
 `
 
