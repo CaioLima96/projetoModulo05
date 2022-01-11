@@ -19,7 +19,7 @@ export const Adm = () => {
     const url = "https://apihotelresiliapalace.herokuapp.com/event"
 
     useEffect(() => {
-        const getRoom = async () => {
+        const getEvent = async () => {
 			try {
 				const response = await axios.get(url);
 				setLoading(false);
@@ -29,8 +29,32 @@ export const Adm = () => {
 			}
         };
     
-        getRoom();
+        getEvent();
     }, []);
+
+	const postEvent = async () => {
+		await axios.post(`https://apihotelresiliapalace.herokuapp.com/event`,
+			{
+				nome: document.getElementById('nome').value,
+                data_inicio: document.getElementById('dataInicio').value,
+                data_fim: document.getElementById('dataFim').value,
+                qtd_pessoas: document.getElementById('qtdPessoas').value,
+                valor_event: document.getElementById('valor').value,
+                faixa_etaria: document.getElementById('idade').value,
+                descricao: document.getElementById('descricao').value,
+                duracao: document.getElementById('duracao').value,
+                local_event: document.getElementById('local').value,
+			}
+			.then((response) => {
+				alert(response)
+			})
+			.catch((error) => {
+				alert(error)
+			})
+		)
+	}
+
+
     console.log(dados)
 
     return (
@@ -56,6 +80,10 @@ export const Adm = () => {
 			
 			<main className="admRow">
 				<button>ADICIONAR EVENTO</button>
+				<form>
+					<label >NOME</label>
+					<input id="nome" onClick={() => postEvent()}></input>
+				</form>
 				<CardLista1>
 					{loading && <><Loading/></>}
 					{dados.map((item) => {
