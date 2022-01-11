@@ -9,13 +9,10 @@ export default () => {
   return (
     <>
       <HeroImg><h1>LAZER DE QUALIDADE</h1></HeroImg>
-      <main>
-        <>
-            <CarouselLayout/>
-        </>
+      <main>     
+          <CarouselLayout/>
       </main>
     </>
   )
 }
-
 

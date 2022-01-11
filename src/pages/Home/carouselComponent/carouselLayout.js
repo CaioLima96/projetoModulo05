@@ -4,7 +4,7 @@ import { CarouselLeft } from "./carouselLeft/carouselLeft.js"
 import { CarouselRight } from ".//carouselRight/carouselRight.js"
 
 
-export const CarouselLayout = ({ children }) => {
+export const CarouselLayout = () => {
     return (
         <>
             <CarouselLeft>
@@ -36,7 +36,7 @@ export const CarouselLayout = ({ children }) => {
             <div id="texto">
               <h1>Quartos</h1>
               <hr></hr>
-              <p>Testes tstetststaafajafhhhhhhhhhssssssssssssssshhhh</p>
+              <p>Testes tstetststaafajaf hhhhhhhhhsssssss sssssssshhhh</p>
             </div>
             </CarouselLeft>
 
@@ -109,3 +109,14 @@ export const CarouselLayout = ({ children }) => {
         
     );
 }
+
+
+//* Imagens que preciso p/ Home
+
+//** 4 imagens da nossa aprensentação
+
+//** 4 imagens quartos 
+
+//**  4 img eventos
+
+//** 4 img exp

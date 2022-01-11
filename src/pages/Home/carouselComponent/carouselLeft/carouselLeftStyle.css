@@ -1,7 +1,6 @@
 #componenteLeft{
     display:flex;
-    flex-flow: column wrap;
-    flex-basis: auto;
+    flex-flow: column wrap;  
     justify-content:center;
     height:350px;
     width:100%;
