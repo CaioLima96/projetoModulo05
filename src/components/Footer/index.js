@@ -9,9 +9,9 @@ const Footer = () => {
 
             <FooterContent>
 
-                <RerserveAquiBtn/>
+                <RerserveAquiBtn>RESERVE AQUI</RerserveAquiBtn>
 
-                <div class="divBar"></div>
+                <div className="divBar"></div>
 
                 <ul>
 
@@ -22,7 +22,7 @@ const Footer = () => {
 
                 </ul>
 
-                <div class="divBar"></div>
+                <div className="divBar"></div>
 
                 <ul>
 

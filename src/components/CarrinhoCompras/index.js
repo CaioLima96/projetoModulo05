@@ -32,17 +32,17 @@ const CarrinhoCompra = ({mostra, mostraCarrinho}) => {
                 <Form>
 
                     <div className="input-field">
-                        <label for="dataChegada">Data de chegada</label>
+                        <label htmlFor="dataChegada">Data de chegada</label>
                         <input id="dataChegada" type="date" placeholder="Data de chegada" required></input>
                     </div>
 
                     <div className="input-field">
-                        <label for="dataSaida">Data de saída</label>
+                        <label htmlFor="dataSaida">Data de saída</label>
                         <input id="dataSaida" type="date" placeholder="Data de saída" required></input>
                     </div>
 
                     <div className="input-field">
-                        <label for="quartosSelect">Quartos</label>
+                        <label htmlFor="quartosSelect">Quartos</label>
                         <select id="quartosSelect">
                             <option selected disabled value="">Selecione um quarto</option>
                             <option>Casal Simples</option>
@@ -53,7 +53,7 @@ const CarrinhoCompra = ({mostra, mostraCarrinho}) => {
                     </div>
 
                     <div className="input-field">
-                        <label for="eventosSelect">Eventos</label>
+                        <label htmlFor="eventosSelect">Eventos</label>
                         <select id="eventosSelect">
                             <option selected disabled value="">Selecione um evento</option>
                             <option>Colonia de Férias</option>
@@ -64,7 +64,7 @@ const CarrinhoCompra = ({mostra, mostraCarrinho}) => {
                     </div>
 
                     <div className="input-field">
-                        <label for="expSelect">Experiências</label>
+                        <label htmlFor="expSelect">Experiências</label>
                         <select id="expSelect">
                             <option selected disabled value="">Selecione uma experiências</option>
                             <option>Massagem Facial</option>
@@ -79,22 +79,22 @@ const CarrinhoCompra = ({mostra, mostraCarrinho}) => {
                 <Form>
 
                     <div className="input-field">
-                        <label for="fullName">Nome completo</label>
+                        <label htmlFor="fullName">Nome completo</label>
                         <input id="fullName" type="text" placeholder="Digite seu nome completo aqui" required></input>
                     </div>
 
                     <div className="input-field">
-                        <label for="email">Email</label>
+                        <label htmlFor="email">Email</label>
                         <input id="email" type="email" placeholder="Digite seu email aqui" required></input>
                     </div>
 
                     <div className="input-field">
-                        <label for="cpf">CPF</label>
+                        <label htmlFor="cpf">CPF</label>
                         <input id="cpf" type="number" placeholder="Digite seu cpf aqui" required></input>
                     </div>
 
                     <div className="input-field">
-                        <label for="senha">Senha</label>
+                        <label htmlFor="senha">Senha</label>
                         <input id="senha" type="password" placeholder="Digite sua senha aqui" required></input>
                     </div>
 
@@ -103,40 +103,40 @@ const CarrinhoCompra = ({mostra, mostraCarrinho}) => {
                 <Form>
 
                     <div className="input-field">
-                        <label for="CEP">CEP</label>
+                        <label htmlFor="CEP">CEP</label>
                         <input id="CEP" type="number" placeholder="Digite seu CEP aqui" required></input>
                     </div>
 
                     <div className="input-field">
-                        <label for="logradouro">Logradouro</label>
+                        <label htmlFor="logradouro">Logradouro</label>
                         <input id="logradouro" type="text" placeholder="Digite seu logradouro aqui" required></input>
                     </div>
 
                     <span>
                         <div className="input-field">
-                            <label for="numero">Número</label>
+                            <label htmlFor="numero">Número</label>
                             <input id="numero" type="number" placeholder="Numero" required></input>
                         </div>
 
                         <div className="input-field">
-                            <label for="complemento">Complemento</label>
+                            <label htmlFor="complemento">Complemento</label>
                             <input id="complemento" type="text" placeholder="Complemento" required></input>
                         </div>
                     </span>
 
                     <div className="input-field">
-                        <label for="bairro">Bairro</label>
+                        <label htmlFor="bairro">Bairro</label>
                         <input id="bairro" type="text" placeholder="Digite seu bairro aqui" required></input>
                     </div>
 
                     <span>
                         <div className="input-field">
-                            <label for="cidade">Cidade</label>
+                            <label htmlFor="cidade">Cidade</label>
                             <input id="cidade" type="text" placeholder="Digite sua cidade aqui" required></input>
                         </div>
 
                         <div className="input-field">
-                            <label for="estado">Estado</label>
+                            <label htmlFor="estado">Estado</label>
                             <input id="estado" type="text" placeholder="Estado" required></input>
                         </div>
                     </span>
