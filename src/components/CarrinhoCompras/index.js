@@ -1,5 +1,5 @@
 import React from "react";
-import { RerserveAquiBtn } from "../ReserveAquiBtn";
+import { ReserveAquiBtn } from "../ReserveAquiBtn";
 import axios from "axios";
 
 import { ReserveAquiTab, Form} from "./styles";
@@ -143,7 +143,7 @@ const CarrinhoCompra = ({mostra, mostraCarrinho}) => {
                 </Form>
             </form>
 
-            <RerserveAquiBtn>RESERVAR</RerserveAquiBtn>
+            <ReserveAquiBtn>RESERVAR</ReserveAquiBtn>
 
             <><p onClick={() => mostraCarrinho()}>Fechar X</p><br/></>
 

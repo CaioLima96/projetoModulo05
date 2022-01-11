@@ -1,5 +1,5 @@
 import React from "react";
-import { RerserveAquiBtn } from "../ReserveAquiBtn";
+import { ReserveAquiBtn } from "../ReserveAquiBtn";
 import {FooterContent, Footer as FooterTag} from './styles'
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
 
             <FooterContent>
 
-                <RerserveAquiBtn>RESERVE AQUI</RerserveAquiBtn>
+                <ReserveAquiBtn>RESERVE AQUI</ReserveAquiBtn>
 
                 <div className="divBar"></div>
 

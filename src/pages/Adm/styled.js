@@ -1,5 +1,16 @@
 import styled from 'styled-components'
 
+export const AdmMain = styled.main`
+
+    display: flex;
+    flex-direction: column;
+
+    button {
+        align-self: center;
+    }
+    
+`
+
 export const AdmTab = styled.div`
     max-width: 1050px;
     width: 67.5%;
@@ -46,5 +57,26 @@ export const AdmInfo = styled.div `
 
     p {
         margin-bottom: 0.625rem;
+    }
+`
+
+export const EventoForm = styled.form `
+
+
+    .input-field {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        margin-bottom: 1.563rem;
+
+        label {
+            margin-bottom: 0.313rem;
+        }
+
+        input, select {
+            padding: 0.125rem 0.188rem 0.188rem 0.375rem;
+            height: 35px;
+        }
     }
 `

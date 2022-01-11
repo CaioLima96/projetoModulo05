@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ReserveAquiBtn = styled.button`
+export const ReserveBtn = styled.button`
     font-size: 1rem;
     padding: 0.5rem 0.75rem 0.375rem;
     border-radius: 4px;
