@@ -44,7 +44,7 @@ export const Experiencias = () => {
                     {dados.map((item) => {
                         return (
 
-                            <li key={item.id} className="imagemListaItem">
+                            <li key={item.id} className="cardsListaItem">
 
                                 <div className="imagemListaImg">
                                     <img src={quartosImg[0].imgPath} alt="experiencias" />
