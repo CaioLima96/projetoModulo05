@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const LoadingContainer = styled.div`
     text-align: center;
+    margin-bottom: 20px;
 
     p {
         margin: 1rem 0;
@@ -26,7 +27,7 @@ export const LoadingItem = styled.div`
     position: relative;
     right: 102px;
 
-    background-color: var(--loadingItem2);
+    background-color: var(--brown3);
 
     animation: moveRight 1s infinite linear;
     

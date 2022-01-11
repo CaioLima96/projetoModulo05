@@ -1,21 +1,22 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 
-import { HeroImg } from "../../components/HeroImg";
 import { CardLista1 } from "../../components/CardLista1";
 import { VerMaisBtn } from "../../components/VerMaisBtn"
 import { quartosImg } from "../../components/ArrayImg/arrayImg";
 import Loading from "../../components/LoadingAnimation";
-import CarrinhoCompra from '../../components/CarrinhoCompras'
+
+import quarto3 from "../../assets/img/quarto3.jpg"
 
 import './styles.css'
+import { AdmTab, AdmImg, AdmInfo } from "./styled";
 
-export const Quartos = () => {
+export const Adm = () => {
 
     const [dados, setDados] = useState([]);
 	const [loading, setLoading] = useState(true);
 
-    const url = "https://apihotelresiliapalace.herokuapp.com/room"
+    const url = "https://apihotelresiliapalace.herokuapp.com/event"
 
     useEffect(() => {
         const getRoom = async () => {
@@ -32,44 +33,33 @@ export const Quartos = () => {
     }, []);
     console.log(dados)
 
-
-	
-	// let apiLoop = () => {
-	// 	var teste = () => {
-	// 		{for(let i = 0; i < quartosImg.length; i++){
-	// 			{dados.map((item) => {
-	// 				return (
-
-	// 					<li class="quartoListaItem">
-
-	// 						<div class="quartoListaImg">
-	// 							<img src={quartosImg[0].imgPath} alt="quarto"/>
-	// 						</div>
-
-	// 						<div class="quartoListaInfo">
-	// 							<p>{item.tipo_de_quarto}</p>
-	// 							<VerMaisBtn/>
-	// 						</div>
-
-	// 					</li>
-	// 				)
-	// 			})}
-	// 		}}
-	// 	}
-
-	// 	return teste
-	// }
-
     return (
-        <>
-            <HeroImg><h1>QUARTOS</h1></HeroImg>
 
-            <main>
+		<>
+			<AdmTab>
+
+				<h1>ADM FICHA</h1>
+
+				<div>
+					<AdmImg ><img src={quarto3}/></AdmImg>
+
+					<AdmInfo>
+
+						<h2>Nome</h2>
+						<p>Id:</p>
+						<p>Cargo:</p>
+
+					</AdmInfo>
+				</div>
+
+			</AdmTab>
+			
+			<main className="admRow">
+				<button>ADICIONAR EVENTO</button>
 				<CardLista1>
 					{loading && <><Loading/></>}
 					{dados.map((item) => {
 						return (
-
 							<li key={item.id} className="cardsListaItem">
 
 								<div className="cardsListaImg">
@@ -77,8 +67,9 @@ export const Quartos = () => {
 								</div>
 
 								<div className="cardsListaInfo">
-									<p>{item.tipo_de_quarto}</p>
-									<VerMaisBtn/>
+									<p>{item.nome}</p>
+									<p id="deleteBtn">Deletar</p>
+									<p id="editBtn">Editar</p>
 								</div>
 
 							</li>
@@ -86,8 +77,9 @@ export const Quartos = () => {
 					})}
 				</CardLista1>
 
-            </main>
-            
-        </>
+			</main>
+
+		</>
+       
     )
 }
