@@ -12,7 +12,7 @@ export const Header = styled.header `
     }
 
 
-    @media (max-width: 600px) {
+    @media (max-width: 762px) {
         display: initial;
         z-index: 1;
 
@@ -25,7 +25,7 @@ export const Header = styled.header `
             justify-content: space-between;
             align-items: center;
 
-            padding: 1rem;
+            padding: 0.5rem 1rem;
 
             a {
                 text-decoration: none;
@@ -56,7 +56,7 @@ export const NavBarLista = styled.ul`
         }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 762px) {
         display: none;
 
         margin: 0;

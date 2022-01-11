@@ -27,7 +27,7 @@ export const LoadingItem = styled.div`
     position: relative;
     right: 102px;
 
-    background-color: var(--loadingItem2);
+    background-color: var(--brown3);
 
     animation: moveRight 1s infinite linear;
     

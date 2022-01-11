@@ -3,13 +3,14 @@ import { Quartos } from './pages/Quartos';
 import Galeria from './pages/Galeria/Index.js';
 import  Home  from './pages/Home'
 import { Experiencias } from './pages/Experiencias/Index.js';
+import { Adm } from './pages/Adm/index.js';
 import { BrowserRouter,Route,Routes,Link } from "react-router-dom";
 
 
 import './App.css';
 import './styles/global.css'
 import Layout from './components/Layout/index.js';
-import { Adm } from './pages/Adm/index';
+
 
 function App() {
 
