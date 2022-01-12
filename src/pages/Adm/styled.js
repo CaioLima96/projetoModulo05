@@ -23,6 +23,7 @@ export const AdmTab = styled.div`
     width: 67.5%;
     margin: 2.25rem auto 0;
 
+
     h1 {
         text-align: center;
         margin-bottom: 1.25rem;
@@ -30,12 +31,15 @@ export const AdmTab = styled.div`
 
     > div {
         display: flex;
+        
     }
 
-    border: 1px solid red;
-
     @media (max-width: 1024px){
-        width: 90%
+        width: 90%;
+
+        > div {
+            flex-direction: column;
+        }
     }
 `
 
@@ -50,6 +54,7 @@ export const AdmImg = styled.div`
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 4px;
     }
 `
 
@@ -62,6 +67,10 @@ export const AdmInfo = styled.div `
 
     p {
         margin-bottom: 0.625rem;
+    }
+
+    @media (max-width: 1024px){
+        margin-left: 0;
     }
 `
 

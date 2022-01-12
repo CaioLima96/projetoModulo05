@@ -11,6 +11,7 @@ import { AdmMain, AdmTab, AdmImg, AdmInfo, EventoForm } from "./styled";
 
 import quarto3 from "../../assets/img/quarto3.jpg"
 import plus1 from "../../assets/img/icons/plus1.png"
+import arthom from "../../assets/img/arthom.jpg"
 
 
 
@@ -19,7 +20,7 @@ import plus1 from "../../assets/img/icons/plus1.png"
 
 
 
-export const Adm = () => {
+export const Staff = () => {
 
     const [dados, setDados] = useState([]);
 	const [loading, setLoading] = useState(true);
@@ -87,16 +88,16 @@ export const Adm = () => {
 		<>
 			<AdmTab id="admInfo" className="lala">
 
-				<h1>ADM FICHA</h1>
+				<h1>STAFF FICHA</h1>
 
 				<div>
-					<AdmImg ><img src={quarto3}/></AdmImg>
+					<AdmImg ><img src={arthom}/></AdmImg>
 
 					<AdmInfo>
 
-						<h2>Nome</h2>
-						<p>Id:</p>
-						<p>Cargo:</p>
+						<h2>Fábio Almeida</h2>
+						<p>Id: dc61f1ac-6572-4eae-86ae-c7ae596ac7a5</p>
+						<p>Cargo: Recepcionista</p>
 
 					</AdmInfo>
 				</div>
