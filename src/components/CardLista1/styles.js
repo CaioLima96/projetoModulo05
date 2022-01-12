@@ -64,7 +64,7 @@ export const CardsLista = styled.ul `
     .cardsListaInfo p {
         font-size: 1.25rem;
         margin: 1.125rem 0 2.375rem 0;
-        text-transform: capitalize;
+        // text-transform: capitalize;
     }
 
     .cardsListaItem button {

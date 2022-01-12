@@ -2,23 +2,23 @@ import React from "react";
 import { ReserveAquiBtn } from "../ReserveAquiBtn";
 import {FooterContent, Footer as FooterTag} from './styles'
 
-const Footer = () => {
+const Footer = ({mostraCarrinho}) => {
     return (
 
         <FooterTag>
 
             <FooterContent>
 
-                <ReserveAquiBtn>RESERVE AQUI</ReserveAquiBtn>
+                <div onClick={() => mostraCarrinho()}><ReserveAquiBtn>RESERVE AQUI</ReserveAquiBtn></div>
 
                 <div className="divBar"></div>
 
                 <ul>
 
                     <li>Nossa Localização</li>
-                    <li>Bairro do Limoeiro</li>
-                    <li>São Paulo - Brasil</li>
-                    <li>CEP: 20010-010</li>
+                    <li>Ipanema</li>
+                    <li>Rio de Janeiro - Brasil</li>
+                    <li>CEP: 22081-050</li>
 
                 </ul>
 
