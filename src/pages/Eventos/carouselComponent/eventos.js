@@ -7,7 +7,6 @@ export default ({ img, title, children, inverted = false }) => {
             <h1>{title}</h1>
             <div style={dividerStyles}></div>
             <br />
-            <p>{children}</p>
         </div>
     </div>
 }
