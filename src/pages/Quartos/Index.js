@@ -43,7 +43,7 @@ export const Quartos = () => {
 							<li key={item.id} className="cardsListaItem">
 
 								<div className="cardsListaImg">
-									<img src={quartosImg[3].imgPath} alt="quarto"/>
+									<img src={item.url} alt="quarto"/>
 								</div>
 
 								<div className="cardsListaInfo">
