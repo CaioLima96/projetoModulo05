@@ -34,7 +34,7 @@ const Header = ({mostraCarrinho}) => {
                     <li><a href="/">Eventos</a></li>
                     <li><a href="/experiencias">Experiências</a></li>
                     <li><Link to="/galeria">Galeria</Link></li>
-                    <li><a href="/">Fale Conosco</a></li>
+                    <li><a href="/fale_conosco">Fale Conosco</a></li>
                     <li onClick={() => mostraCarrinho()}><ReserveAquiBtn>RESERVE AQUI</ReserveAquiBtn></li>
                 </NavBarLista>
 
