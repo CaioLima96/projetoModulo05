@@ -95,7 +95,7 @@ export const Staff = () => {
 
 					<StaffInfo>
 
-						<h2>Fábio Almeida</h2>
+						<h2>Arthom</h2>
 						<p>Id: dc61f1ac-6572-4eae-86ae-c7ae596ac7a5</p>
 						<p>Cargo: Recepcionista</p>
 
@@ -168,7 +168,7 @@ export const Staff = () => {
 							<li key={item.id} id="eventListItemStaff" className="cardsListaItem">
 
 								<div className="cardsListaImg">
-									<img src={quartosImg[0].imgPath} alt="quarto"/>
+									<img src={quartosImg[0].imgPath} alt={item.nome}/>
 								</div>
 
 								<div className="cardsListaInfo">
