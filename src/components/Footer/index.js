@@ -16,9 +16,9 @@ const Footer = () => {
                 <ul>
 
                     <li>Nossa Localização</li>
-                    <li>Bairro do Limoeiro</li>
-                    <li>São Paulo - Brasil</li>
-                    <li>CEP: 20010-010</li>
+                    <li>Ipanema</li>
+                    <li>Rio de Janeiro, RJ</li>
+                    <li>CEP: 36950-000</li>
 
                 </ul>
 
