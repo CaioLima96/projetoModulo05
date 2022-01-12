@@ -1,0 +1,42 @@
+#Contatos{
+    display:flex;
+    flex-flow: row;
+    justify-content:space-evenly;
+    margin-bottom: 3rem;
+}
+
+#contatoRight{
+    align-self:center;
+}
+
+a:link {
+    color: green;
+    text-decoration: none;
+  }
+  
+  /*Link já visitado*/
+  a:visited {
+    color:#C89959;
+    text-decoration: none;
+  }
+  
+  /*Quando o mouse passa por cima*/
+  a:hover {
+    color:#DDCA7D;
+    text-decoration: none;
+  }
+  
+  /*Link ativo/selecionado*/
+  a:active {
+    color:#C89959;
+    text-decoration: none;
+  }
+
+  @media(max-width: 600px) { 
+    #Contatos{
+    display:flex;
+    flex-flow: column;
+    align-items:center;
+    margin-bottom: 3rem;
+}
+  }
