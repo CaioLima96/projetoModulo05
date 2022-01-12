@@ -3,12 +3,9 @@ import axios from "axios";
 
 import { HeroImg } from "../../components/HeroImg";
 import { CardLista1 } from "../../components/CardLista1";
-import { VerMaisBtn } from "../../components/VerMaisBtn"
 import { quartosImg } from "../../components/ArrayImg/arrayImg";
 import Loading from "../../components/LoadingAnimation";
-import CarrinhoCompra from '../../components/CarrinhoCompras'
 
-import './styles.css'
 
 export const Quartos = () => {
 
@@ -31,34 +28,6 @@ export const Quartos = () => {
         getRoom();
     }, []);
     console.log(dados)
-
-
-	
-	// let apiLoop = () => {
-	// 	var teste = () => {
-	// 		{for(let i = 0; i < quartosImg.length; i++){
-	// 			{dados.map((item) => {
-	// 				return (
-
-	// 					<li class="quartoListaItem">
-
-	// 						<div class="quartoListaImg">
-	// 							<img src={quartosImg[0].imgPath} alt="quarto"/>
-	// 						</div>
-
-	// 						<div class="quartoListaInfo">
-	// 							<p>{item.tipo_de_quarto}</p>
-	// 							<VerMaisBtn/>
-	// 						</div>
-
-	// 					</li>
-	// 				)
-	// 			})}
-	// 		}}
-	// 	}
-
-	// 	return teste
-	// }
 
     return (
         <>
