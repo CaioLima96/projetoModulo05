@@ -15,10 +15,13 @@ export const HeroImgContainer = styled.div `
     background-position: center;
 
     h1 {
-        font-size: 3.125rem;
-        color: #d9d9d9;
-        text-transform: uppercase;
-        background:  rgba(0, 0, 0, 60);
 
+        font-size: 3.125rem;
+        color:  #f8f8ff;
+        text-transform: uppercase;
+        padding: 0.188rem 0.625rem;
+        border-radius: 0.188rem;
+        background-color: var(--black1);
     }
+       
 `
