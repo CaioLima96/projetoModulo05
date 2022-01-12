@@ -118,6 +118,7 @@ export const StaffMain = styled.main`
                 
                 p {
                     font-size: 1rem;
+                    cursor: pointer;
                 }
 
                 p:first-child{

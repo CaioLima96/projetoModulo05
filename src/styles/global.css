@@ -47,3 +47,7 @@ main {
 .modal-open {
     overflow: hidden;
 }
+
+button {
+    cursor: pointer;
+}
