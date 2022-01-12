@@ -174,8 +174,8 @@ export const Staff = () => {
 								<div className="cardsListaInfo">
 									<p>{item.nome}</p>
 									<div>
-										<p onClick={() => deleteEvente(item.id)} id="deleteBtn">Deletar</p>
 										<p onClick={() => setEdit(!mostraEdit)} id="editBtn">Editar</p>
+										<p onClick={() => deleteEvente(item.id)} id="deleteBtn">Deletar</p>
 									</div>
 								</div>
 

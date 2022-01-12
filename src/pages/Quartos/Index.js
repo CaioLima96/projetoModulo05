@@ -79,7 +79,12 @@ export const Quartos = () => {
 
 								<div className="cardsListaInfo">
 									<p>{item.tipo_de_quarto}</p>
-									<VerMaisBtn/>
+									<div>
+										<p>Nº: {item.numero} -</p>
+										<p>Qtd pessoas: {item.qtd_max_pessoas} -</p>
+										<p>Status: {item.status} -</p>
+										<p>Valor: R${item.valor_quarto}</p>
+									</div>
 								</div>
 
 							</li>
