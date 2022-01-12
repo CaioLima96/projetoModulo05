@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const AdmMain = styled.main`
+export const StaffMain = styled.main`
 
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@ export const AdmMain = styled.main`
     
 `
 
-export const AdmTab = styled.div`
+export const StaffTab = styled.div`
     max-width: 1050px;
     width: 67.5%;
     margin: 2.25rem auto 0;
@@ -43,7 +43,7 @@ export const AdmTab = styled.div`
     }
 `
 
-export const AdmImg = styled.div`
+export const StaffImg = styled.div`
     max-width: 400px;
     width: 100%;
     height: 400px;
@@ -58,7 +58,7 @@ export const AdmImg = styled.div`
     }
 `
 
-export const AdmInfo = styled.div `
+export const StaffInfo = styled.div `
     margin-left: 1rem;
 
     h2 {

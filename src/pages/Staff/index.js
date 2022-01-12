@@ -7,7 +7,7 @@ import Loading from "../../components/LoadingAnimation";
 import { ReserveAquiBtn } from "../../components/ReserveAquiBtn"
 
 import './styles.css'
-import { AdmMain, AdmTab, AdmImg, AdmInfo, EventoForm } from "./styled";
+import { StaffMain, StaffTab, StaffImg, StaffInfo, EventoForm } from "./styled";
 
 import quarto3 from "../../assets/img/quarto3.jpg"
 import plus1 from "../../assets/img/icons/plus1.png"
@@ -86,25 +86,25 @@ export const Staff = () => {
     return (
 
 		<>
-			<AdmTab id="admInfo" className="lala">
+			<StaffTab id="staffInfo" className="lala">
 
 				<h1>STAFF FICHA</h1>
 
 				<div>
-					<AdmImg ><img src={arthom}/></AdmImg>
+					<StaffImg ><img src={arthom}/></StaffImg>
 
-					<AdmInfo>
+					<StaffInfo>
 
 						<h2>Fábio Almeida</h2>
 						<p>Id: dc61f1ac-6572-4eae-86ae-c7ae596ac7a5</p>
 						<p>Cargo: Recepcionista</p>
 
-					</AdmInfo>
+					</StaffInfo>
 				</div>
 
-			</AdmTab>
+			</StaffTab>
 		
-			<AdmMain className="admMain">
+			<StaffMain className="StaffMain">
 
 				<button onClick={() => setMostraForm(!mostraForm)}>ADICIONAR EVENTO <img src={plus1}/></button>
 
@@ -182,7 +182,7 @@ export const Staff = () => {
 					})}
 				</CardLista1>
 
-			</AdmMain>
+			</StaffMain>
 
 		</>
        
