@@ -47,7 +47,7 @@ export const Experiencias = () => {
                             <li key={item.id} className="cardsListaItem">
 
                                 <div className="cardsListaImg">
-                                    <img src={quartosImg[0].imgPath} alt="experiencias" />
+                                    <img src={item.url} alt="experiencias" />
                                 </div>
 
                                 <div className="cardsListaInfo">
