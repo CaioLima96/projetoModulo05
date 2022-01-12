@@ -7,6 +7,7 @@
     margin-bottom: 2rem;
 }
 
+
 @keyframes tonext {
     75% {
       left: 0;
@@ -97,20 +98,37 @@
     counter-increment: item;
   }
 
-  #carousel__slide1{
-    background-image: url(https://unsplash.it/1600/400?image=950);  
+  #carousel__slide1_evt{
+    background-image: url(../../../../assets/img/eventos/evento1.jpg);  
     background-repeat: no-repeat;   
   }
-  #carousel__slide2{
-    background-image: url(https://unsplash.it/1600/400?image=930);
+  #carousel__slide2_evt{
+    background-image: url(../../../../assets/img/eventos/evento3.jpg);
     background-repeat: no-repeat;
   }
-  #carousel__slide3{
-    background-image: url(https://unsplash.it/1600/400?image=940);
+  #carousel__slide3_evt{
+    background-image: url(../../../../assets/img/eventos/evento4.jpg);
     background-repeat: no-repeat;
   }
-  #carousel__slide4{
-    background-image: url(https://unsplash.it/1600/400?image=980);
+  #carousel__slide4_evt{
+    background-image: url(../../../../assets/img/eventos/evento2.jpg);
+    background-repeat: no-repeat;
+  }
+
+  #carousel__slide1_room{
+    background-image: url(../../../../assets/img/quartos/quarto2.jpg);  
+    background-repeat: no-repeat;   
+  }
+  #carousel__slide2_room{
+    background-image: url(../../../../assets/img/quartos/quarto4.jpg);
+    background-repeat: no-repeat;
+  }
+  #carousel__slide3_room{
+    background-image: url(../../../../assets/img/quartos/quarto1.jpg);
+    background-repeat: no-repeat;
+  }
+  #carousel__slide4_room{
+    background-image: url(../../../../assets/img/quartos/quarto5.jpg);
     background-repeat: no-repeat;
   }
  
@@ -129,7 +147,7 @@
     #componenteLeft{
       display: flex;
       flex-direction: column;
-      margin-bottom: 3rem;
+      margin-bottom: 8rem;
   }
 
 .carousel { 

@@ -3,7 +3,7 @@ import { HeroImg } from "../../components/HeroImg";
 import { CarouselLayout } from "./carouselComponent/carouselLayout"
 // import Layout from "../../components/Layout"
 
-import './styles.css'
+// import './styles.css'
 
 export default () => {
   return (
