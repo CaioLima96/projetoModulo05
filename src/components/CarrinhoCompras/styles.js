@@ -13,6 +13,7 @@ export const ReserveAquiTab = styled.div`
     right: 0;
     top: 7.9%;
 
+    overflow-x: hidden;
     padding: 1.25rem;
     box-shadow: -10px 10px 22px -8px rgb(0 0 0 / 75%);
     background-color: white;
