@@ -31,7 +31,7 @@ export const Quartos = () => {
 
     return (
         <>
-            <HeroImg><h1>Quartos</h1></HeroImg>
+            <HeroImg><h1>QUARTOS</h1></HeroImg>
 
             <main>
 				
