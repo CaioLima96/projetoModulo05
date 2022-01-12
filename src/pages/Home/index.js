@@ -8,7 +8,7 @@ import { CarouselLayout } from "./carouselComponent/carouselLayout"
 export default () => {
   return (
     <>
-      <HeroImg><h1>LAZER DE QUALIDADE</h1></HeroImg>
+      <HeroImg><h1>Bem Vindo</h1></HeroImg>
       <main>     
           <CarouselLayout/>
       </main>
