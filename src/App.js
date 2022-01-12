@@ -4,6 +4,7 @@ import Galeria from './pages/Galeria/Index.js';
 import  Home  from './pages/Home'
 import { Experiencias } from './pages/Experiencias/Index.js';
 import { Adm } from './pages/Adm/index.js';
+import  FaleConosco from './pages/Contato/index.js';
 import { BrowserRouter,Route,Routes,Link } from "react-router-dom";
 
 
@@ -24,6 +25,7 @@ function App() {
 					<Route path="/experiencias" element={<Experiencias/>}/>
 					<Route path="" element={<Home/>}/>
 					<Route path="/adm" element={<Adm/>}/>
+					<Route path="/fale_conosco" element={<FaleConosco/>}/>
 				</Routes>
 			</Layout>
 		</BrowserRouter>
