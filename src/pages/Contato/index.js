@@ -7,7 +7,7 @@ import './styles.css'
 export default () => {
   return (
     <>
-      <HeroImg></HeroImg>
+      <HeroImg><h1>Contatos</h1></HeroImg>
       <main  id="Contatos">
         <div>
           <img src={logo} alt="logo" />
