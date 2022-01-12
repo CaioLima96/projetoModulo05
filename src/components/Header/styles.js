@@ -93,6 +93,10 @@ export const NavBarLista = styled.ul`
 
         li {
             margin: 0 0 0.688rem 0;
+
+            a {
+                color: white;
+            }
         }
     }
 `
