@@ -30,7 +30,7 @@ function Layout ({children}) {
         <>
             <Header mostraCarrinho={showReservaTab} />
             {children}
-            <Footer/>
+            <Footer mostraCarrinho={showReservaTab} />
             <CarrinhoCompra mostra={mostra} mostraCarrinho={showReservaTab}/>
         </>
     )
