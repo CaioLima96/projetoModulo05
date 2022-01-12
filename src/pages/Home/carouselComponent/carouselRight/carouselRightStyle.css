@@ -1,10 +1,10 @@
 #componenteRight{
     display:flex;
-    align-content:center;
+    align-content:flex-start;
     justify-content:space-between;
     height:20rem;
     width:100%;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 .carousel { 
     filter: drop-shadow(0 0 10px #0003);
@@ -19,7 +19,10 @@
     width:45%;
     align-self: center;
     text-align: center;
-    
+    margin-bottom: 6rem;
+}
+#espaçoBotao{
+  padding-bottom: 2rem;
 }
 
 
@@ -120,7 +123,7 @@ hr{
   }
 
   #carousel__slide1_exp{
-    background-image: url(../../../../assets/img/exp2.jpg);  
+    background-image: url(../../../../assets/img/exp/exp4.jpg);  
     background-repeat: no-repeat;   
   }
   #carousel__slide2_exp{
@@ -150,7 +153,8 @@ hr{
     #componenteRight{
       display: flex;
       flex-direction: column-reverse;
-      margin-bottom: 8rem;
+      height: 40rem;
+      margin-bottom: 4rem;
   }
 
 .carousel { 
@@ -167,7 +171,15 @@ hr{
   align-self: center;
   text-align: center;
 }
-  
+}
+@media(max-width: 600px) { 
+
+  #componenteRight{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 40rem;
+    margin-bottom: 8rem;
+}
 
 }
   
