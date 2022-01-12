@@ -85,7 +85,7 @@ export const CarouselLayout = () => {
                 <div id="texto">
                     <h1>Experiências</h1>
                     <hr></hr>
-                    <p></p>
+                    <p>Além de requintadas suítes, oferecemos um experiências diferenciadas e exclusivas, que podem fazer de sua passagem pelo Resilia Palace uma passagem ainda mais marcante, experimente um jantar à luz de velas com pratos incríveis assinados por nossa premiada cozinha ou delicioso chá da tarde à beira da piscina, enquanto sente a deliciosa brisa de Ipanema.</p>
                     <VerMaisBtn/>
                 </div>
                 <section class="carousel" aria-label="Gallery">
