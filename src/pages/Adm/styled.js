@@ -16,8 +16,6 @@ export const AdmTab = styled.div`
     width: 67.5%;
     margin: 2.25rem auto 0;
 
-    grid-template-rows: 60px 1fr 1fr 245px !important;
-
     h1 {
         text-align: center;
         margin-bottom: 1.25rem;
