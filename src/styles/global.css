@@ -43,3 +43,7 @@ main {
 .showHideReserva{
     display: flex !important;
 }
+
+.modal-open {
+    overflow: hidden;
+}

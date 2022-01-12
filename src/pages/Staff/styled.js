@@ -80,6 +80,7 @@ export const StaffMain = styled.main`
 
     display: flex;
     flex-direction: column;
+    position: relative;
 
     button {
         align-self: center;
@@ -123,6 +124,34 @@ export const StaffMain = styled.main`
                     margin-right: 1rem;
                 }
             }
+        }
+    }
+
+    #staffEditModal {
+        display: none;
+        width: 100%;
+        height: 100%;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        padding: 0px 8rem;
+        overflow-y: scroll;
+        z-index: 20;
+        background-color: #30303070;
+
+        form {
+            padding: 2.125rem;
+            background-color: white;
+        }
+
+        @media(max-width: 420px) {
+            padding: 0px 1.25rem !important;
+        }
+
+        @media(max-width: 600px) {
+            padding: 0px 2.5rem;
         }
     }
     
