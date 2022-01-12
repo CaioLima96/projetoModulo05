@@ -7,7 +7,7 @@ import Loading from "../../components/LoadingAnimation";
 import { ReserveAquiBtn } from "../../components/ReserveAquiBtn"
 
 import './styles.css'
-import { StaffMain, StaffTab, StaffImg, StaffInfo, EventoForm } from "./styled";
+import {StaffTab, StaffImg, StaffInfo, EventoForm, EventListStaff, StaffMain, } from "./styled";
 
 import quarto3 from "../../assets/img/quarto3.jpg"
 import plus1 from "../../assets/img/icons/plus1.png"
@@ -60,11 +60,11 @@ export const Staff = () => {
 			}
 			)
 			.then((response) => {
-				alert(response)
+				alert("Evento adicionato com sucesso!" + '\n' + response)
 				getEvent()
 			})
 			.catch((error) => {
-				alert(error)
+				alert({Msg: error.message})
 			}
 		)
 		
@@ -73,11 +73,11 @@ export const Staff = () => {
 	const deleteEvente = (id) => {
 		axios.delete(`https://apihotelresiliapalace.herokuapp.com/event/${id}`)
 		.then((response) => {
-			alert(response)
+			alert("Evento excluido com sucesso!" + '\n' + response)
 			getEvent()
 		})
 		.catch((error) => {
-			alert(error)
+			alert({Msg: error.message})
 		})
 	}
 
@@ -104,7 +104,7 @@ export const Staff = () => {
 
 			</StaffTab>
 		
-			<StaffMain className="StaffMain">
+			<StaffMain className="staffMain">
 
 				<button onClick={() => setMostraForm(!mostraForm)}>ADICIONAR EVENTO <img src={plus1}/></button>
 
@@ -161,11 +161,11 @@ export const Staff = () => {
 				
 				: null}
 
-				<CardLista1>
+				<CardLista1 id="eventListStaff">
 					{loading && <><Loading/></>}
 					{dados.map((item) => {
 						return (
-							<li key={item.id} className="cardsListaItem">
+							<li key={item.id} id="eventListItemStaff" className="cardsListaItem">
 
 								<div className="cardsListaImg">
 									<img src={quartosImg[0].imgPath} alt="quarto"/>
@@ -173,8 +173,10 @@ export const Staff = () => {
 
 								<div className="cardsListaInfo">
 									<p>{item.nome}</p>
-									<p onClick={() => deleteEvente(item.id)} id="deleteBtn">Deletar</p>
-									<p onClick={() => setEdit(!mostraEdit)} id="editBtn">Editar</p>
+									<div>
+										<p onClick={() => deleteEvente(item.id)} id="deleteBtn">Deletar</p>
+										<p onClick={() => setEdit(!mostraEdit)} id="editBtn">Editar</p>
+									</div>
 								</div>
 
 							</li>

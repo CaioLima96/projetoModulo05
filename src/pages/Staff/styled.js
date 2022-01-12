@@ -1,23 +1,5 @@
 import styled from 'styled-components'
 
-export const StaffMain = styled.main`
-
-    display: flex;
-    flex-direction: column;
-
-    button {
-        align-self: center;
-        padding: 0.625rem 1rem 0.563rem 1rem;
-        margin-bottom: 1.875rem;
-        font-size: 1rem;
-
-        img {
-            width: 12px;
-        }
-    }
-    
-`
-
 export const StaffTab = styled.div`
     max-width: 1050px;
     width: 67.5%;
@@ -47,8 +29,6 @@ export const StaffImg = styled.div`
     max-width: 400px;
     width: 100%;
     height: 400px;
-
-    background-color: black;
 
     img {
         width: 100%;
@@ -94,4 +74,59 @@ export const EventoForm = styled.form `
             height: 35px;
         }
     }
+`
+
+export const StaffMain = styled.main`
+
+    display: flex;
+    flex-direction: column;
+
+    button {
+        align-self: center;
+        padding: 0.625rem 1rem 0.563rem 1rem;
+        margin-bottom: 1.875rem;
+        font-size: 1rem;
+
+        img {
+            width: 12px;
+        }
+    }
+
+    #eventListItemStaff {
+        position: initial;
+        overflow: initial;
+        height: fit-content;
+
+        .cardsListaInfo {
+            width: 100%;
+
+            position: initial;
+            padding: 0.625rem;
+
+            border-radius: initial;
+
+            p{
+                margin: 0;
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+
+                margin: 1rem 0 0.125rem;
+                
+                p {
+                    font-size: 1rem;
+                }
+
+                p:first-child{
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+    
+`
+
+export const EventListStaff = styled.ul`
 `
