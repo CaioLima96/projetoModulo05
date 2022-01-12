@@ -18,11 +18,6 @@ export const CarouselLayout = () => {
                     <p id="espaçoBotao">Nossa missão ...</p>
                     <hr></hr>
                 </div>
-                <div id="canva">
-                    <iframe loading="lazy" id="iframe" src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAExQJqJQ5o&#x2F;view?embed"allowfullscreen="allowfullscreen" allow="fullscreen">
-                    </iframe>
-                </div>
-
             </CarouselCentral>
 
             <CarouselLeft>
@@ -56,8 +51,8 @@ export const CarouselLayout = () => {
                     <hr></hr>
                     <p>Ao acordar abra a janela e sinta a brisa da Praia de Ipanema, relaxe com uma taça de champanhe refrescante em um dos nossos sofisticados ambientes.</p>
                     <p id="espaçoBotao">Para desfrutar de uma pitada extra de magia você pode escolher entre uma de nossas suítes e criar memórias inesquecíveis.</p>
-                    
-                    <Link to="/quartos"><VerMaisBtn/></Link>
+
+                    <Link to="/quartos"><VerMaisBtn /></Link>
                 </div>
             </CarouselLeft>
 
@@ -66,7 +61,7 @@ export const CarouselLayout = () => {
                     <h1>Experiências</h1>
                     <hr></hr>
                     <p id="espaçoBotao">Além de requintadas suítes, oferecemos um experiências diferenciadas e exclusivas, que podem fazer de sua passagem pelo Resilia Palace uma passagem ainda mais marcante, experimente um jantar à luz de velas com pratos incríveis assinados por nossa premiada cozinha ou delicioso chá da tarde à beira da piscina, enquanto sente a deliciosa brisa de Ipanema.</p>
-                    <Link to="/experiencias"><VerMaisBtn/></Link>
+                    <Link to="/experiencias"><VerMaisBtn /></Link>
                 </div>
                 <section className="carousel" aria-label="Gallery">
                     <ol className="carousel__viewport">
@@ -125,7 +120,7 @@ export const CarouselLayout = () => {
                     <h1>Eventos</h1>
                     <hr></hr>
                     <p id="espaçoBotao">De uma reunião mais íntima até grandes eventos, temos o espaço ideal para a sua reunião ou comemoração.</p>
-                    <Link to="/eventos"><VerMaisBtn/></Link>
+                    <Link to="/eventos"><VerMaisBtn /></Link>
                 </div>
             </CarouselLeft>
         </>
@@ -138,7 +133,7 @@ export const CarouselLayout = () => {
 
 //** 4 imagens da nossa aprensentação
 
-//** 4 imagens quartos 
+//** 4 imagens quartos
 
 //**  4 img eventos
 

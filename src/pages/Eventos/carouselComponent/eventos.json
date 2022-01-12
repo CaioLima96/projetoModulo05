@@ -1,0 +1,29 @@
+{
+    "eventos": [
+        {
+            "title": "Eventos particulares",
+            "img": "evento1.jpg",
+            "body": "Lorem ipsum inae"
+        },
+        {
+            "title": "Eventos Corporativos",
+            "img": "evento3.jpg",
+            "body": "Lorem ipsum inae"
+        },
+        {
+            "title": "Cursos e Workshops",
+            "img": "evento4.jpg",
+            "body": "Lorem ipsum inae"
+        },
+        {
+            "title": "Casamentos",
+            "img": "evento5.jpg",
+            "body": "Lorem ipsum inae"
+        },
+        {
+            "title": "Salão de festas",
+            "img": "evento6.jpg",
+            "body": "Lorem ipsum inae"
+        }
+    ]
+}
