@@ -16,9 +16,8 @@ export const HeroImgContainer = styled.div `
 
     h1 {
         font-size: 3.125rem;
-        color: #d9d9d9;
+        color:  #f8f8ff;
         text-transform: uppercase;
-        background:  rgba(0, 0, 0, 60);
-
-    }
+        background: #00000000;
+       
 `
