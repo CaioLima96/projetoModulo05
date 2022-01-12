@@ -1,7 +1,8 @@
 
 export default ({ img, title, children, inverted = false }) => {
+    const img_url = require(`../../../assets/img/eventos/${img}`)
     return <div style={inverted ? stylesInverted : styles}>
-        <img style={{ borderRadius: 8 }} width={525} height={300} src={img} alt="eventos" />
+        <img style={{ borderRadius: 8 }} width={525} height={300} src={img_url} alt="eventos" />
         <div style={stylesText} id="texto">
             <h1>{title}</h1>
             <div style={dividerStyles}></div>

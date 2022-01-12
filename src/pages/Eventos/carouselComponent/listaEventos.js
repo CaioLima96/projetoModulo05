@@ -6,7 +6,7 @@ const { eventos } = data;
 
 console.log(eventos);
 
-export const CarouselEventos = () => {
+export const ListaEventos = () => {
     return (
         <div style={{ paddingBottom: "24px" }}>
             <div style={{ margin: 'auto', marginTop: "0", paddingBottom: "60px" }} id="textoCentro">

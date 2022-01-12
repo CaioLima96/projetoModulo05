@@ -1,6 +1,6 @@
 import React from "react";
 import { HeroImg } from "../../components/HeroImg/index";
-import { CarouselEventos } from "./carouselComponent/carouselEventos";
+import { ListaEventos } from "./carouselComponent/listaEventos";
 import './Index.css'
 
 export const Eventos = () => {
@@ -8,7 +8,7 @@ export const Eventos = () => {
         <>
             <HeroImg><h1>Eventos</h1></HeroImg>
             <main>
-                <CarouselEventos />
+                <ListaEventos />
             </main>
         </>
     )
