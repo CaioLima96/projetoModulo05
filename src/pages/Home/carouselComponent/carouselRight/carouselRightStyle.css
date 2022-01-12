@@ -16,10 +16,12 @@
 
 #texto{
     height:20%;   
-      width:45%;
+    width:45%;
     align-self: center;
     text-align: center;
+    
 }
+
 
 hr{
     
@@ -117,20 +119,20 @@ hr{
     counter-increment: item;
   }
 
-  #carousel__slide1{
-    background-image: url(https://unsplash.it/1600/400?image=950);  
+  #carousel__slide1_exp{
+    background-image: url(../../../../assets/img/exp2.jpg);  
     background-repeat: no-repeat;   
   }
-  #carousel__slide2{
-    background-image: url(https://unsplash.it/1600/400?image=930);
+  #carousel__slide2_exp{
+    background-image: url(../../../../assets/img/exp3.jpg);
     background-repeat: no-repeat;
   }
-  #carousel__slide3{
-    background-image: url(https://unsplash.it/1600/400?image=940);
+  #carousel__slide3_exp{
+    background-image: url(../../../../assets/img/exp5.jpg);
     background-repeat: no-repeat;
   }
-  #carousel__slide4{
-    background-image: url(https://unsplash.it/1600/400?image=980);
+  #carousel__slide4_exp{
+    background-image: url(../../../../assets/img/exp1.jpg);
     background-repeat: no-repeat;
   }
  
@@ -148,7 +150,7 @@ hr{
     #componenteRight{
       display: flex;
       flex-direction: column-reverse;
-      margin-bottom: 3rem;
+      margin-bottom: 8rem;
   }
 
 .carousel { 
@@ -173,7 +175,7 @@ hr{
     .carousel__snapper {
       animation-name: tonext, snap;
       animation-timing-function: ease;
-      animation-duration: 4s;
+      animation-duration: 5s;
       animation-iteration-count: infinite;
     }
   
