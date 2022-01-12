@@ -3,12 +3,9 @@ import axios from "axios";
 
 import { HeroImg } from "../../components/HeroImg";
 import { CardLista1 } from "../../components/CardLista1";
-import { VerMaisBtn } from "../../components/VerMaisBtn"
 import { quartosImg } from "../../components/ArrayImg/arrayImg";
 import Loading from "../../components/LoadingAnimation";
-import CarrinhoCompra from '../../components/CarrinhoCompras'
 
-import './styles.css'
 
 export const Quartos = () => {
 
@@ -32,37 +29,9 @@ export const Quartos = () => {
     }, []);
     console.log(dados)
 
-
-	
-	// let apiLoop = () => {
-	// 	var teste = () => {
-	// 		{for(let i = 0; i < quartosImg.length; i++){
-	// 			{dados.map((item) => {
-	// 				return (
-
-	// 					<li class="quartoListaItem">
-
-	// 						<div class="quartoListaImg">
-	// 							<img src={quartosImg[0].imgPath} alt="quarto"/>
-	// 						</div>
-
-	// 						<div class="quartoListaInfo">
-	// 							<p>{item.tipo_de_quarto}</p>
-	// 							<VerMaisBtn/>
-	// 						</div>
-
-	// 					</li>
-	// 				)
-	// 			})}
-	// 		}}
-	// 	}
-
-	// 	return teste
-	// }
-
     return (
         <>
-            <HeroImg><h1>QUARTOS</h1></HeroImg>
+            <HeroImg><h1>Quartos</h1></HeroImg>
 
             <main>
 				
@@ -74,12 +43,17 @@ export const Quartos = () => {
 							<li key={item.id} className="cardsListaItem">
 
 								<div className="cardsListaImg">
-									<img src={quartosImg[3].imgPath} alt="quarto"/>
+									<img src={item.url} alt="quarto"/>
 								</div>
 
 								<div className="cardsListaInfo">
 									<p>{item.tipo_de_quarto}</p>
-									<VerMaisBtn/>
+									<div>
+										<p>Nº: {item.numero} -</p>
+										<p>Qtd pessoas: {item.qtd_max_pessoas} -</p>
+										<p>Status: {item.status} -</p>
+										<p>Valor: R${item.valor_quarto}</p>
+									</div>
 								</div>
 
 							</li>

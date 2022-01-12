@@ -1,29 +1,12 @@
 #componenteLeft{
     display:flex;
-    flex-flow: column wrap;
-    flex-basis: auto;
-    justify-content:center;
-    height:350px;
+    align-content:center;
+    justify-content:space-between;
+    height:20rem;
     width:100%;
-}
-.carousel { 
-    filter: drop-shadow(0 0 10px #0003);
-    perspective: 1px;
-    height:90%;
-    width:50%;
-  }
-  
-
-#texto{
-    height:20%;   
-    box-sizing: border-box;
+    margin-bottom: 2rem;
 }
 
-hr{
-    
-  height: 1px;
-  background-image: linear-gradient(to right,rgb(255, 255, 255), rgba(0, 0, 0, 0.75), rgb(255, 255, 255));
-}
 
 @keyframes tonext {
     75% {
@@ -115,20 +98,38 @@ hr{
     counter-increment: item;
   }
 
-  #carousel__slide1{
-    background-image: url(https://unsplash.it/1600/400?image=950);  
+
+  #carousel__slide1_evt{
+    background-image: url(../../../../assets/img/eventos/evento1.jpg);  
+    background-repeat: no-repeat; 
+  }
+  #carousel__slide2_evt{
+    background-image: url(../../../../assets/img/eventos/evento7.jpg);
+    background-repeat: no-repeat;
+  }
+  #carousel__slide3_evt{
+    background-image: url(../../../../assets/img/eventos/evento5.jpg);
+    background-repeat: no-repeat;
+  }
+  #carousel__slide4_evt{
+    background-image: url(../../../../assets/img/eventos/evento2.jpg);
+    background-repeat: no-repeat;
+  }
+
+  #carousel__slide1_room{
+    background-image: url(../../../../assets/img/quartos/quarto2.jpg);  
     background-repeat: no-repeat;   
   }
-  #carousel__slide2{
-    background-image: url(https://unsplash.it/1600/400?image=930);
+  #carousel__slide2_room{
+    background-image: url(../../../../assets/img/quartos/quarto4.jpg);
     background-repeat: no-repeat;
   }
-  #carousel__slide3{
-    background-image: url(https://unsplash.it/1600/400?image=940);
+  #carousel__slide3_room{
+    background-image: url(../../../../assets/img/quartos/quarto1.jpg);
     background-repeat: no-repeat;
   }
-  #carousel__slide4{
-    background-image: url(https://unsplash.it/1600/400?image=980);
+  #carousel__slide4_room{
+    background-image: url(../../../../assets/img/quartos/quarto5.jpg);
     background-repeat: no-repeat;
   }
  
@@ -139,8 +140,58 @@ hr{
     left: 0;
     width: 100%;
     height: 100%;
-    scroll-snap-align: center;
+    scroll-snap-align: center; 
   }
+
+    @media(max-width: 800px) { 
+
+    #componenteLeft{
+      display: flex;
+      flex-direction: column;
+      height: 40rem;
+      margin-bottom: 4rem;
+  }
+
+.carousel { 
+  height: 80%;
+  width: 60%;
+  align-self: center;
+  text-align: center; 
+}
+
+
+#texto{
+  height:20%;  
+  width: 70%; 
+  align-self: center;
+  text-align: center;
+}
+}
+
+
+@media(max-width: 600px) { 
+
+  #componenteLeft{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+}
+
+.carousel { 
+height: 80%;
+width: 50%;
+align-self: center;
+text-align: center; 
+}
+
+
+#texto{
+height:20%;  
+width: 70%; 
+align-self: center;
+text-align: center;
+}
+}
   
   @media (hover: hover) {
     .carousel__snapper {

@@ -2,14 +2,14 @@ import React from "react";
 import { ReserveAquiBtn } from "../ReserveAquiBtn";
 import {FooterContent, Footer as FooterTag} from './styles'
 
-const Footer = () => {
+const Footer = ({mostraCarrinho}) => {
     return (
 
         <FooterTag>
 
             <FooterContent>
 
-                <ReserveAquiBtn>RESERVE AQUI</ReserveAquiBtn>
+                <div onClick={() => mostraCarrinho()}><ReserveAquiBtn>RESERVE AQUI</ReserveAquiBtn></div>
 
                 <div className="divBar"></div>
 

@@ -46,13 +46,19 @@ export const Experiencias = () => {
 
                             <li key={item.id} className="cardsListaItem">
 
-                                <div className="imagemListaImg">
-                                    <img src={quartosImg[0].imgPath} alt="experiencias" />
+                                <div className="cardsListaImg">
+                                    <img src={item.url} alt="experiencias" />
                                 </div>
 
                                 <div className="cardsListaInfo">
                                     <p>{item.nome}</p>
-                                    <VerMaisBtn />
+                                    <div>
+										<p>Sobre: {item.descricao} -</p>
+										<p>Qtd pessoas: {item.qtd_pessoas} -</p>
+										<p>Horário: {item.horario} -</p>
+                                        <p>Dia: {item.dia_semana} -</p>
+										<p>Valor: R${item.valor_exp}</p>
+									</div>
                                 </div>
 
                             </li>

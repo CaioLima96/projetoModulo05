@@ -13,6 +13,7 @@ export const ReserveAquiTab = styled.div`
     right: 0;
     top: 7.9%;
 
+    overflow-x: hidden;
     padding: 1.25rem;
     box-shadow: -10px 10px 22px -8px rgb(0 0 0 / 75%);
     background-color: white;
@@ -30,6 +31,7 @@ export const ReserveAquiTab = styled.div`
         width: 100%;
         height: 55px;
         margin-bottom: 4.125rem;
+        padding: 0.625rem 1rem 0.563rem 1rem;
     }
 
     /* form:not(form:last-child){
@@ -47,7 +49,7 @@ export const ReserveAquiTab = styled.div`
         overflow-y: scroll; */
     }
 
-    @media(min-width: 763px) {
+    @media(min-width: 850px) {
         position: fixed;
         height: 100%;
         overflow-y: scroll;
@@ -56,7 +58,7 @@ export const ReserveAquiTab = styled.div`
     }
 `
 
-export const Form = styled.div`
+export const Fieldset = styled.div`
 
     width: 75.3%;
     margin: 0 auto;

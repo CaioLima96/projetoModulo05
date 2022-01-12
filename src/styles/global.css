@@ -22,6 +22,7 @@ body {
     --brown5: #6A563D;
     --brown6: #DDCA7D;
     --brown7: #B88B4A;
+    --black1: #00000082;
 }
 
 
@@ -42,4 +43,12 @@ main {
 
 .showHideReserva{
     display: flex !important;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
 }
