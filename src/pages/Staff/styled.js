@@ -21,6 +21,7 @@ export const StaffTab = styled.div`
 
         > div {
             flex-direction: column;
+            align-items: center;
         }
     }
 `
@@ -28,7 +29,6 @@ export const StaffTab = styled.div`
 export const StaffImg = styled.div`
     max-width: 400px;
     width: 100%;
-    height: 400px;
 
     img {
         width: 100%;
