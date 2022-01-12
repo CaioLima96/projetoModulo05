@@ -144,6 +144,10 @@ export const StaffMain = styled.main`
         form {
             padding: 2.125rem;
             background-color: white;
+
+            p:last-child {
+                cursor: pointer;
+            }
         }
 
         @media(max-width: 420px) {

@@ -233,6 +233,8 @@ export const Staff = () => {
 							</div>
 
 							<button onClick={() => postEvent()}>ENVIAR</button>
+							
+							<p onClick={() => setEdit(!mostraEdit)}>Fechar X</p>
 						</EventoForm>
 					</div> 
 				: null}
