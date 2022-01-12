@@ -70,6 +70,31 @@ export const Staff = () => {
 		
 	}
 
+	const updateEvent =  (id) => {
+		axios.put(`https://apihotelresiliapalace.herokuapp.com/event/${id}`,
+			{
+				nome: document.getElementById('nomeEvento').value,
+			    data_inicio: document.getElementById('dataInicio').value + " 13:30:00",
+			    data_fim: document.getElementById('dataFim').value + " 13:30:00",
+			    qtd_pessoas: Number(document.getElementById('qtdPessoas').value),
+			    valor_event: Number(document.getElementById('valorEvento').value).toFixed(2),
+			    faixa_etaria: document.getElementById('idade').value,
+			    descricao: document.getElementById('descricaoEvento').value,
+			    duracao: document.getElementById('duracaoEvento').value,
+			    local_event: document.getElementById('localEvento').value,
+			}
+			)
+			.then((response) => {
+				alert("Evento alterado com sucesso!")
+				getEvent()
+			})
+			.catch((error) => {
+				alert("Erro: não foi possível alterado o evento.")
+			}
+		)
+		
+	}
+
 	const deleteEvente = (id) => {
 		axios.delete(`https://apihotelresiliapalace.herokuapp.com/event/${id}`)
 		.then((response) => {
@@ -232,7 +257,7 @@ export const Staff = () => {
 								<input id="localEvento" type="text" placeholder="Digite a duração do evento aqui" required></input>
 							</div>
 
-							<button onClick={() => postEvent()}>ENVIAR</button>
+							<button onClick={() => updateEvent(dados.id)}>ENVIAR</button>
 							
 							<p onClick={() => setEdit(!mostraEdit)}>Fechar X</p>
 						</EventoForm>
