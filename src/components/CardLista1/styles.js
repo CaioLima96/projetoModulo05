@@ -19,7 +19,6 @@ export const CardsLista = styled.ul `
         position: relative;
         overflow: hidden;
 
-        background-color: black;
         margin: 1%;
     }
 
@@ -47,11 +46,25 @@ export const CardsLista = styled.ul `
         border-radius: 5px;
         text-align: center;
         background-color: white;
+
+        div {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            margin-bottom: 0.313rem;
+
+            p {
+                font-size: 14px;
+                margin: 0 0.313rem 0.313rem 0;
+            }
+        }
     }
 
     .cardsListaInfo p {
         font-size: 1.25rem;
         margin: 1.125rem 0 2.375rem 0;
+        text-transform: capitalize;
     }
 
     .cardsListaItem button {

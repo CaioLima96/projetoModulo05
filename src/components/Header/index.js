@@ -4,6 +4,7 @@ import { ReserveAquiBtn } from "../ReserveAquiBtn";
 
 import { Header as HeaderTag, NavBarLista } from "./styles";
 import MenuIcon from '../../assets/img/icons/menu.svg'
+import LogoHeader from '../../assets/img/logo/logo4.png'
 
 const Header = ({mostraCarrinho}) => {
     
@@ -24,12 +25,13 @@ const Header = ({mostraCarrinho}) => {
                     <div onClick={myNavBar}><img src={MenuIcon} alt="Menu Icon"/></div>
                 </div>
 
+                <div className="logoImg">
+                    <img src={LogoHeader} alt="logo"/>
+                </div>
+
                 <NavBarLista id="navBarLista">
-                    {/* <li>
-                        <Link to="/">Hotel Resilia Palace</Link>
-                    </li> */}
                     <li><Link to="/Home">Home</Link></li>
-                    <li><Link to="/adm">ADM</Link></li>
+                    <li><Link to="/staff">Staff</Link></li>
                     <li><Link to="/quartos">Quartos</Link></li>
                     <li><a href="/">Eventos</a></li>
                     <li><a href="/experiencias">Experiências</a></li>

@@ -19,7 +19,7 @@ header{
 	grid-row: 1/1;
 }
 
-#heroImg, #admInfo {
+#heroImg, #staffInfo {
 	grid-row: 2/2;
 }
 

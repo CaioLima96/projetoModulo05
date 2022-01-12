@@ -4,8 +4,8 @@ export const Footer = styled.footer`
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    background-color: gray;
+    font-weight: bold;
+    background-color: #DDCA7D;
 `
 
 export const FooterContent = styled.div`
@@ -17,6 +17,7 @@ export const FooterContent = styled.div`
         width: 200px;
         height: 50px;
         align-self: center;
+        backgroud-color: #B88B4A;
     }
 
     ul {

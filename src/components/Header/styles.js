@@ -5,22 +5,50 @@ export const Header = styled.header `
     align-items: center;
     justify-content: flex-end;
 
-    background-color: gray;
+    background-color: var(--brown6);
 
-    #navMenu > div {
-        display: none;
+    #navMenu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        div:first-child {
+            display: none;
+        }
     }
 
+    a:hover {
+        color: white;
+    }
 
-    @media (max-width: 762px) {
+    .logoImg {
+        height: 55px;
+        margin-left: 0.625rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    @media (max-width: 850px) {
         display: initial;
         z-index: 1;
+
+        #navMenu {
+            display: initial;
+        }
 
         .hideShowBtn {
             display: block !important;
         }
 
-        #navMenu > div {
+        .logoImg {
+            display: none;
+        }
+
+        #navMenu div:first-child {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -52,11 +80,11 @@ export const NavBarLista = styled.ul`
 
         a {
             text-decoration: none;
-            color: white;
+            color: black;
         }
     }
 
-    @media (max-width: 762px) {
+    @media (max-width: 850px) {
         display: none;
 
         margin: 0;
@@ -65,6 +93,10 @@ export const NavBarLista = styled.ul`
 
         li {
             margin: 0 0 0.688rem 0;
+
+            a {
+                color: white;
+            }
         }
     }
 `
