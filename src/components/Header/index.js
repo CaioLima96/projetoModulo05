@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { RerserveAquiBtn } from "../ReserveAquiBtn";
+import { ReserveAquiBtn } from "../ReserveAquiBtn";
 
 import { Header as HeaderTag, NavBarLista } from "./styles";
 import MenuIcon from '../../assets/img/icons/menu.svg'
@@ -35,7 +35,7 @@ const Header = ({ mostraCarrinho }) => {
                     <li><a href="/experiencias">Experiências</a></li>
                     <li><Link to="/galeria">Galeria</Link></li>
                     <li><a href="/">Fale Conosco</a></li>
-                    <li onClick={() => mostraCarrinho()}><RerserveAquiBtn>RESERVE AQUI</RerserveAquiBtn></li>
+                    <li onClick={() => mostraCarrinho()}><ReserveAquiBtn>RESERVE AQUI</ReserveAquiBtn></li>
                 </NavBarLista>
 
             </nav>

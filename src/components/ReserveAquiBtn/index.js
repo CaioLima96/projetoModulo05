@@ -1,10 +1,10 @@
 import React from "react";
 
-import { ReserveAquiBtn } from "./styles";
+import { ReserveBtn } from "./styles";
 
-export const RerserveAquiBtn = ({children}) => {
+export const ReserveAquiBtn = ({children}) => {
     return (
 
-        <ReserveAquiBtn id="reserveAquiBtn">{children}</ReserveAquiBtn>
+        <ReserveBtn id="reserveAquiBtn">{children}</ReserveBtn>
     )
 }
