@@ -29,7 +29,7 @@ const Header = ({mostraCarrinho}) => {
                         <Link to="/">Hotel Resilia Palace</Link>
                     </li> */}
                     <li><Link to="/Home">Home</Link></li>
-                    <li><Link to="/adm">ADM</Link></li>
+                    <li><Link to="/staff">Staff</Link></li>
                     <li><Link to="/quartos">Quartos</Link></li>
                     <li><a href="/">Eventos</a></li>
                     <li><a href="/experiencias">Experiências</a></li>

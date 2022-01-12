@@ -6,12 +6,21 @@ import { quartosImg } from "../../components/ArrayImg/arrayImg";
 import Loading from "../../components/LoadingAnimation";
 import { ReserveAquiBtn } from "../../components/ReserveAquiBtn"
 
-import quarto3 from "../../assets/img/quarto3.jpg"
-
 import './styles.css'
-import { AdmMain, AdmTab, AdmImg, AdmInfo, EventoForm } from "./styled";
+import { StaffMain, StaffTab, StaffImg, StaffInfo, EventoForm } from "./styled";
 
-export const Adm = () => {
+import quarto3 from "../../assets/img/quarto3.jpg"
+import plus1 from "../../assets/img/icons/plus1.png"
+import arthom from "../../assets/img/arthom.jpg"
+
+
+
+
+//===============================================
+
+
+
+export const Staff = () => {
 
     const [dados, setDados] = useState([]);
 	const [loading, setLoading] = useState(true);
@@ -37,7 +46,6 @@ export const Adm = () => {
     }, []);
 
 	const postEvent =  () => {
-		console.log('teste api post')
 		axios.post(`https://apihotelresiliapalace.herokuapp.com/event`,
 			{
 				nome: document.getElementById('nomeEvento').value,
@@ -73,85 +81,83 @@ export const Adm = () => {
 		})
 	}
 
-
-
     console.log(dados)
 
     return (
 
 		<>
-			<AdmTab id="admInfo" className="lala">
+			<StaffTab id="staffInfo" className="lala">
 
-				<h1>ADM FICHA</h1>
+				<h1>STAFF FICHA</h1>
 
 				<div>
-					<AdmImg ><img src={quarto3}/></AdmImg>
+					<StaffImg ><img src={arthom}/></StaffImg>
 
-					<AdmInfo>
+					<StaffInfo>
 
-						<h2>Nome</h2>
-						<p>Id:</p>
-						<p>Cargo:</p>
+						<h2>Fábio Almeida</h2>
+						<p>Id: dc61f1ac-6572-4eae-86ae-c7ae596ac7a5</p>
+						<p>Cargo: Recepcionista</p>
 
-					</AdmInfo>
+					</StaffInfo>
 				</div>
 
-			</AdmTab>
+			</StaffTab>
 		
-			<AdmMain className="admMain">
+			<StaffMain className="StaffMain">
 
-				<button onClick={() => setMostraForm(!mostraForm)}>ADIVIONAR EVENTO</button>
+				<button onClick={() => setMostraForm(!mostraForm)}>ADICIONAR EVENTO <img src={plus1}/></button>
 
 				{mostraForm ? 
 
 				<EventoForm id="eventoForm"  >
-				<div className="input-field">
-					<label htmlFor="nomeEvento">Nome evento</label>
-					<input id="nomeEvento" type="text" placeholder="Digite o nome do evento aqui" required></input>
-				</div>
+					<div className="input-field">
+						<label htmlFor="nomeEvento">Nome evento</label>
+						<input id="nomeEvento" type="text" placeholder="Digite o nome do evento aqui" required></input>
+					</div>
 
-				<div className="input-field">
-					<label htmlFor="dataInicio">Data de inicio</label>
-					<input id="dataInicio" type="date" placeholder="Escolha a data de inicio" required></input>
-				</div>
+					<div className="input-field">
+						<label htmlFor="dataInicio">Data de inicio</label>
+						<input id="dataInicio" type="date" placeholder="Escolha a data de inicio" required></input>
+					</div>
 
-				<div className="input-field">
-					<label htmlFor="dataFim">Data de fim</label>
-					<input id="dataFim" type="date" placeholder="Escolha a data de inicio" required></input>
-				</div>
+					<div className="input-field">
+						<label htmlFor="dataFim">Data de fim</label>
+						<input id="dataFim" type="date" placeholder="Escolha a data de inicio" required></input>
+					</div>
 
-				<div className="input-field">
-					<label htmlFor="qtdPessoas">Qtd pessoas</label>
-					<input id="qtdPessoas" type="number" placeholder="Qtd de pessoas" required></input>
-				</div>
+					<div className="input-field">
+						<label htmlFor="qtdPessoas">Qtd pessoas</label>
+						<input id="qtdPessoas" type="number" placeholder="Qtd de pessoas" required></input>
+					</div>
 
-				<div className="input-field">
-					<label htmlFor="valorEvento">Valor do evento</label>
-					<input id="valorEvento" type="number" placeholder="Digite o valor do evento aqui" required></input>
-				</div>
+					<div className="input-field">
+						<label htmlFor="valorEvento">Valor do evento</label>
+						<input id="valorEvento" type="number" placeholder="Digite o valor do evento aqui" required></input>
+					</div>
 
-				<div className="input-field">
-					<label htmlFor="valorEvento">Faixa etária</label>
-					<input id="idade" type="text" placeholder="Digite a faixa etária aqui" required></input>
-				</div>
+					<div className="input-field">
+						<label htmlFor="valorEvento">Faixa etária</label>
+						<input id="idade" type="text" placeholder="Digite a faixa etária aqui" required></input>
+					</div>
 
-				<div className="input-field">
-					<label htmlFor="descricaoEvento">Descrição do evento</label>
-					<input id="descricaoEvento" type="text" placeholder="Digite a descrição do evento aqui" required></input>
-				</div>
+					<div className="input-field">
+						<label htmlFor="descricaoEvento">Descrição do evento</label>
+						<input id="descricaoEvento" type="text" placeholder="Digite a descrição do evento aqui" required></input>
+					</div>
 
-				<div className="input-field">
-					<label htmlFor="duracaoEvento">Duração do evento</label>
-					<input id="duracaoEvento" type="text" placeholder="Digite a duração do evento aqui" required></input>
-				</div>
+					<div className="input-field">
+						<label htmlFor="duracaoEvento">Duração do evento</label>
+						<input id="duracaoEvento" type="text" placeholder="Digite a duração do evento aqui" required></input>
+					</div>
 
-				<div className="input-field">
-					<label htmlFor="localEvento">Local do evento</label>
-					<input id="localEvento" type="text" placeholder="Digite a duração do evento aqui" required></input>
-				</div>
+					<div className="input-field">
+						<label htmlFor="localEvento">Local do evento</label>
+						<input id="localEvento" type="text" placeholder="Digite a duração do evento aqui" required></input>
+					</div>
 
-				<button onClick={() => postEvent()}>ENVIAR</button>
-				</EventoForm>
+					<button onClick={() => postEvent()}>ENVIAR</button>
+					</EventoForm>
 				
 				: null}
 
@@ -176,7 +182,7 @@ export const Adm = () => {
 					})}
 				</CardLista1>
 
-			</AdmMain>
+			</StaffMain>
 
 		</>
        
