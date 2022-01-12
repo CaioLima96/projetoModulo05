@@ -7,6 +7,13 @@ export const AdmMain = styled.main`
 
     button {
         align-self: center;
+        padding: 0.625rem 1rem 0.563rem 1rem;
+        margin-bottom: 1.875rem;
+        font-size: 1rem;
+
+        img {
+            width: 12px;
+        }
     }
     
 `
@@ -59,7 +66,8 @@ export const AdmInfo = styled.div `
 `
 
 export const EventoForm = styled.form `
-
+    display: flex;
+    flex-direction: column;
 
     .input-field {
         display: flex;
