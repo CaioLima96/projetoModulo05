@@ -60,11 +60,11 @@ export const Staff = () => {
 			}
 			)
 			.then((response) => {
-				alert("Evento adicionato com sucesso!" + '\n' + response)
+				alert("Evento adicionato com sucesso!")
 				getEvent()
 			})
 			.catch((error) => {
-				alert({Msg: error.message})
+				alert("Erro: não foi possível adicionar o evento.")
 			}
 		)
 		
@@ -73,11 +73,11 @@ export const Staff = () => {
 	const deleteEvente = (id) => {
 		axios.delete(`https://apihotelresiliapalace.herokuapp.com/event/${id}`)
 		.then((response) => {
-			alert("Evento excluido com sucesso!" + '\n' + response)
+			alert("Evento excluido com sucesso!")
 			getEvent()
 		})
 		.catch((error) => {
-			alert({Msg: error.message})
+			alert("Erro: não foi possível deletar o evento.")
 		})
 	}
 
@@ -184,56 +184,60 @@ export const Staff = () => {
 					})}
 				</CardLista1>
 
-				<div id="staffEditModal">
-					<EventoForm id="eventoForm"  >
-						<div className="input-field">
-							<label htmlFor="nomeEvento">Nome evento</label>
-							<input id="nomeEvento" type="text" placeholder="Digite o nome do evento aqui" required></input>
-						</div>
+				{mostraEdit ?
+					<div id="staffEditModal">
+						<EventoForm id="eventoForm"  >
+							<div className="input-field">
+								<label htmlFor="nomeEvento">Nome evento</label>
+								<input id="nomeEvento" type="text" placeholder="Digite o nome do evento aqui" required></input>
+							</div>
 
-						<div className="input-field">
-							<label htmlFor="dataInicio">Data de inicio</label>
-							<input id="dataInicio" type="date" placeholder="Escolha a data de inicio" required></input>
-						</div>
+							<div className="input-field">
+								<label htmlFor="dataInicio">Data de inicio</label>
+								<input id="dataInicio" type="date" placeholder="Escolha a data de inicio" required></input>
+							</div>
 
-						<div className="input-field">
-							<label htmlFor="dataFim">Data de fim</label>
-							<input id="dataFim" type="date" placeholder="Escolha a data de inicio" required></input>
-						</div>
+							<div className="input-field">
+								<label htmlFor="dataFim">Data de fim</label>
+								<input id="dataFim" type="date" placeholder="Escolha a data de inicio" required></input>
+							</div>
 
-						<div className="input-field">
-							<label htmlFor="qtdPessoas">Qtd pessoas</label>
-							<input id="qtdPessoas" type="number" placeholder="Qtd de pessoas" required></input>
-						</div>
+							<div className="input-field">
+								<label htmlFor="qtdPessoas">Qtd pessoas</label>
+								<input id="qtdPessoas" type="number" placeholder="Qtd de pessoas" required></input>
+							</div>
 
-						<div className="input-field">
-							<label htmlFor="valorEvento">Valor do evento</label>
-							<input id="valorEvento" type="number" placeholder="Digite o valor do evento aqui" required></input>
-						</div>
+							<div className="input-field">
+								<label htmlFor="valorEvento">Valor do evento</label>
+								<input id="valorEvento" type="number" placeholder="Digite o valor do evento aqui" required></input>
+							</div>
 
-						<div className="input-field">
-							<label htmlFor="valorEvento">Faixa etária</label>
-							<input id="idade" type="text" placeholder="Digite a faixa etária aqui" required></input>
-						</div>
+							<div className="input-field">
+								<label htmlFor="valorEvento">Faixa etária</label>
+								<input id="idade" type="text" placeholder="Digite a faixa etária aqui" required></input>
+							</div>
 
-						<div className="input-field">
-							<label htmlFor="descricaoEvento">Descrição do evento</label>
-							<input id="descricaoEvento" type="text" placeholder="Digite a descrição do evento aqui" required></input>
-						</div>
+							<div className="input-field">
+								<label htmlFor="descricaoEvento">Descrição do evento</label>
+								<input id="descricaoEvento" type="text" placeholder="Digite a descrição do evento aqui" required></input>
+							</div>
 
-						<div className="input-field">
-							<label htmlFor="duracaoEvento">Duração do evento</label>
-							<input id="duracaoEvento" type="text" placeholder="Digite a duração do evento aqui" required></input>
-						</div>
+							<div className="input-field">
+								<label htmlFor="duracaoEvento">Duração do evento</label>
+								<input id="duracaoEvento" type="text" placeholder="Digite a duração do evento aqui" required></input>
+							</div>
 
-						<div className="input-field">
-							<label htmlFor="localEvento">Local do evento</label>
-							<input id="localEvento" type="text" placeholder="Digite a duração do evento aqui" required></input>
-						</div>
+							<div className="input-field">
+								<label htmlFor="localEvento">Local do evento</label>
+								<input id="localEvento" type="text" placeholder="Digite a duração do evento aqui" required></input>
+							</div>
 
-						<button onClick={() => postEvent()}>ENVIAR</button>
-					</EventoForm>
-				</div>
+							<button onClick={() => postEvent()}>ENVIAR</button>
+						</EventoForm>
+					</div> 
+				: null}
+
+				
 
 			</StaffMain>
 

@@ -129,7 +129,6 @@ export const StaffMain = styled.main`
     }
 
     #staffEditModal {
-        display: none;
         width: 100%;
         height: 100%;
 
@@ -137,7 +136,7 @@ export const StaffMain = styled.main`
         top: 0;
         left: 0;
 
-        padding: 0px 8rem;
+        padding: 0.625rem 8rem;
         overflow-y: scroll;
         z-index: 20;
         background-color: #30303070;
@@ -148,11 +147,11 @@ export const StaffMain = styled.main`
         }
 
         @media(max-width: 420px) {
-            padding: 0px 1.25rem !important;
+            padding: 0.625rem 1.25rem !important;
         }
 
         @media(max-width: 600px) {
-            padding: 0px 2.5rem;
+            padding: 0.625rem 2.5rem;
         }
     }
     
