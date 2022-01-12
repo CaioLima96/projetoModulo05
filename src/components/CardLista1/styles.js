@@ -67,6 +67,10 @@ export const CardsLista = styled.ul `
         // text-transform: capitalize;
     }
 
+    .cardsListaInfo > p {
+        text-transform: capitalize;
+    }
+
     .cardsListaItem button {
         color: black;
     }
