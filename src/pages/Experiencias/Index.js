@@ -35,7 +35,7 @@ export const Experiencias = () => {
 
     return (
         <>
-            <HeroImg><h1>EXPERIÊNCIAS</h1></HeroImg>
+            <HeroImg><h1>Experiências</h1></HeroImg>
 
             <main>
 
