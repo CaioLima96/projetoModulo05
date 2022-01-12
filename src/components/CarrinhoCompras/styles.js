@@ -30,6 +30,7 @@ export const ReserveAquiTab = styled.div`
         width: 100%;
         height: 55px;
         margin-bottom: 4.125rem;
+        padding: 0.625rem 1rem 0.563rem 1rem;
     }
 
     /* form:not(form:last-child){
@@ -56,7 +57,7 @@ export const ReserveAquiTab = styled.div`
     }
 `
 
-export const Form = styled.div`
+export const Fieldset = styled.div`
 
     width: 75.3%;
     margin: 0 auto;

@@ -7,7 +7,7 @@ import Loading from "../../components/LoadingAnimation";
 import { ReserveAquiBtn } from "../../components/ReserveAquiBtn"
 
 import './styles.css'
-import { StaffMain, StaffTab, StaffImg, StaffInfo, EventoForm } from "./styled";
+import {StaffTab, StaffImg, StaffInfo, EventoForm, EventListStaff, StaffMain, } from "./styled";
 
 import quarto3 from "../../assets/img/quarto3.jpg"
 import plus1 from "../../assets/img/icons/plus1.png"
@@ -60,11 +60,11 @@ export const Staff = () => {
 			}
 			)
 			.then((response) => {
-				alert(response)
+				alert("Evento adicionato com sucesso!" + '\n' + response)
 				getEvent()
 			})
 			.catch((error) => {
-				alert(error)
+				alert({Msg: error.message})
 			}
 		)
 		
@@ -73,11 +73,11 @@ export const Staff = () => {
 	const deleteEvente = (id) => {
 		axios.delete(`https://apihotelresiliapalace.herokuapp.com/event/${id}`)
 		.then((response) => {
-			alert(response)
+			alert("Evento excluido com sucesso!" + '\n' + response)
 			getEvent()
 		})
 		.catch((error) => {
-			alert(error)
+			alert({Msg: error.message})
 		})
 	}
 
@@ -104,7 +104,7 @@ export const Staff = () => {
 
 			</StaffTab>
 		
-			<StaffMain className="StaffMain">
+			<StaffMain className="staffMain">
 
 				<button onClick={() => setMostraForm(!mostraForm)}>ADICIONAR EVENTO <img src={plus1}/></button>
 
@@ -157,15 +157,15 @@ export const Staff = () => {
 					</div>
 
 					<button onClick={() => postEvent()}>ENVIAR</button>
-					</EventoForm>
+				</EventoForm>
 				
 				: null}
 
-				<CardLista1>
+				<CardLista1 id="eventListStaff">
 					{loading && <><Loading/></>}
 					{dados.map((item) => {
 						return (
-							<li key={item.id} className="cardsListaItem">
+							<li key={item.id} id="eventListItemStaff" className="cardsListaItem">
 
 								<div className="cardsListaImg">
 									<img src={quartosImg[0].imgPath} alt="quarto"/>
@@ -173,14 +173,67 @@ export const Staff = () => {
 
 								<div className="cardsListaInfo">
 									<p>{item.nome}</p>
-									<p onClick={() => deleteEvente(item.id)} id="deleteBtn">Deletar</p>
-									<p onClick={() => setEdit(!mostraEdit)} id="editBtn">Editar</p>
+									<div>
+										<p onClick={() => setEdit(!mostraEdit)} id="editBtn">Editar</p>
+										<p onClick={() => deleteEvente(item.id)} id="deleteBtn">Deletar</p>
+									</div>
 								</div>
 
 							</li>
 						)
 					})}
 				</CardLista1>
+
+				<div id="staffEditModal">
+					<EventoForm id="eventoForm"  >
+						<div className="input-field">
+							<label htmlFor="nomeEvento">Nome evento</label>
+							<input id="nomeEvento" type="text" placeholder="Digite o nome do evento aqui" required></input>
+						</div>
+
+						<div className="input-field">
+							<label htmlFor="dataInicio">Data de inicio</label>
+							<input id="dataInicio" type="date" placeholder="Escolha a data de inicio" required></input>
+						</div>
+
+						<div className="input-field">
+							<label htmlFor="dataFim">Data de fim</label>
+							<input id="dataFim" type="date" placeholder="Escolha a data de inicio" required></input>
+						</div>
+
+						<div className="input-field">
+							<label htmlFor="qtdPessoas">Qtd pessoas</label>
+							<input id="qtdPessoas" type="number" placeholder="Qtd de pessoas" required></input>
+						</div>
+
+						<div className="input-field">
+							<label htmlFor="valorEvento">Valor do evento</label>
+							<input id="valorEvento" type="number" placeholder="Digite o valor do evento aqui" required></input>
+						</div>
+
+						<div className="input-field">
+							<label htmlFor="valorEvento">Faixa etária</label>
+							<input id="idade" type="text" placeholder="Digite a faixa etária aqui" required></input>
+						</div>
+
+						<div className="input-field">
+							<label htmlFor="descricaoEvento">Descrição do evento</label>
+							<input id="descricaoEvento" type="text" placeholder="Digite a descrição do evento aqui" required></input>
+						</div>
+
+						<div className="input-field">
+							<label htmlFor="duracaoEvento">Duração do evento</label>
+							<input id="duracaoEvento" type="text" placeholder="Digite a duração do evento aqui" required></input>
+						</div>
+
+						<div className="input-field">
+							<label htmlFor="localEvento">Local do evento</label>
+							<input id="localEvento" type="text" placeholder="Digite a duração do evento aqui" required></input>
+						</div>
+
+						<button onClick={() => postEvent()}>ENVIAR</button>
+					</EventoForm>
+				</div>
 
 			</StaffMain>
 
