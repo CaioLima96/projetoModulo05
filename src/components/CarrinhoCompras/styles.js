@@ -49,7 +49,7 @@ export const ReserveAquiTab = styled.div`
         overflow-y: scroll; */
     }
 
-    @media(min-width: 763px) {
+    @media(min-width: 850px) {
         position: fixed;
         height: 100%;
         overflow-y: scroll;
