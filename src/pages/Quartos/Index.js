@@ -3,9 +3,13 @@ import axios from "axios";
 
 import { HeroImg } from "../../components/HeroImg";
 import { CardLista1 } from "../../components/CardLista1";
-import { quartosImg } from "../../components/ArrayImg/arrayImg";
 import Loading from "../../components/LoadingAnimation";
 
+const display = {
+	display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+}
 
 export const Quartos = () => {
 
@@ -35,7 +39,7 @@ export const Quartos = () => {
 
             <main>
 				
-				<CardLista1>
+				<CardLista1 id="">
 					{loading && <><Loading/></>}
 					{dados.map((item) => {
 						return (
@@ -46,9 +50,9 @@ export const Quartos = () => {
 									<img src={item.url} alt="quarto"/>
 								</div>
 
-								<div className="cardsListaInfo">
+								<div className="cardsListaInfo" >
 									<p>{item.tipo_de_quarto}</p>
-									<div>
+									<div style={display} className="descricaoItem">
 										<p>Nº: {item.numero} -</p>
 										<p>Qtd pessoas: {item.qtd_max_pessoas} -</p>
 										<p>Status: {item.status} -</p>

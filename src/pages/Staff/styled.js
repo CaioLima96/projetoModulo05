@@ -94,27 +94,24 @@ export const StaffMain = styled.main`
     }
 
     #eventListItemStaff {
-        position: initial;
-        overflow: initial;
-        height: fit-content;
 
         .cardsListaInfo {
-            width: 100%;
-
-            position: initial;
+            
             padding: 0.625rem;
 
-            border-radius: initial;
-
-            p{
-                margin: 0;
+            .descricaoItem{
+                
+                p {
+                    margin-bottom: 0.625rem;
+                }
             }
 
-            div {
+            .editDelBtn {
+
                 display: flex;
                 justify-content: center;
-
-                margin: 1rem 0 0.125rem;
+                flex-wrap: wrap;
+                margin-top: 1.625rem;
                 
                 p {
                     font-size: 1rem;

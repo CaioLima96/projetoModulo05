@@ -8,9 +8,7 @@ function Layout ({children}) {
     const [mostra, setMostra] = useState(false)
 
     function showReservaTab(){
-        // let reservaTab = document.getElementsByClassName('hideReserva')
-        // reservaTab.classList.toggle('showHideReserva')
-        // console.log("reservatab")
+
         if(!mostra) {
             setMostra(true)
         } else {

@@ -1,6 +1,5 @@
 import React from "react";
-import { ReserveAquiBtn } from "../ReserveAquiBtn";
-import axios from "axios";
+
 
 import { ReserveAquiTab, Fieldset} from "./styles";
 

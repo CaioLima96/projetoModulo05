@@ -11,7 +11,7 @@ export const ReserveAquiTab = styled.div`
 
     position: absolute;
     right: 0;
-    top: 7.9%;
+    z-index: 3;
 
     overflow-x: hidden;
     padding: 1.25rem;
@@ -34,10 +34,6 @@ export const ReserveAquiTab = styled.div`
         padding: 0.625rem 1rem 0.563rem 1rem;
     }
 
-    /* form:not(form:last-child){
-        margin-bottom: 5rem;
-    } */
-
     div {
         margin-bottom: 4.375rem; 
     }
@@ -45,16 +41,12 @@ export const ReserveAquiTab = styled.div`
     @media (max-width: 600px) {
         max-width: 800px;
         box-shadow: 0px 15px 10px -7px rgb(0 0 0 / 75%);
-        /* height: 100vh;
-        overflow-y: scroll; */
     }
 
     @media(min-width: 850px) {
         position: fixed;
         height: 100%;
         overflow-y: scroll;
-        z-index: 3;
-        top: 0;
     }
 `
 

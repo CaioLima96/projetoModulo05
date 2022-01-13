@@ -16,10 +16,6 @@ export const CardsLista = styled.ul `
         flex-direction: column;
         max-width: 450px;
         width: 100%;
-        /* height: 353px;
-
-        position: relative;
-        overflow: hidden; */
 
         margin: 1%;
     }
@@ -44,22 +40,17 @@ export const CardsLista = styled.ul `
         flex-grow: 1;
 
         width: 100%;
-        
-        /* position: absolute;
-        bottom: 0px;
-        left: 10%; */
-
-        border-radius: 5px;
-        text-align: center;
-        background-color: white;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
         padding: 1.125rem 0.313rem 0.625rem;
 
-        div {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+        text-align: center;
+        background-color: white;
 
-            /* margin-bottom: 0.313rem; */
+        .descricaoItem {
+            /* display: flex;
+            justify-content: center;
+            flex-wrap: wrap; */
 
             p:not(p:last-child) {
                 font-size: 14px;

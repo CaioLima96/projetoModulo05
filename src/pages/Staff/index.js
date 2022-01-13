@@ -2,14 +2,12 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import { CardLista1 } from "../../components/CardLista1";
-import { quartosImg } from "../../components/ArrayImg/arrayImg";
 import Loading from "../../components/LoadingAnimation";
-import { ReserveAquiBtn } from "../../components/ReserveAquiBtn"
 
 import './styles.css'
-import { StaffTab, StaffImg, StaffInfo, EventoForm, EventListStaff, StaffMain, } from "./styled";
+import { StaffTab, StaffImg, StaffInfo, EventoForm, StaffMain, } from "./styled";
 
-import quarto3 from "../../assets/img/quarto3.jpg"
+
 import plus1 from "../../assets/img/icons/plus1.png"
 import arthom from "../../assets/img/arthom.jpg"
 
@@ -120,7 +118,7 @@ export const Staff = () => {
 				<h1>STAFF FICHA</h1>
 
 				<div>
-					<StaffImg ><img src={arthom} /></StaffImg>
+					<StaffImg ><img src={arthom} alt="Arthom"/></StaffImg>
 
 					<StaffInfo>
 
@@ -135,7 +133,7 @@ export const Staff = () => {
 
 			<StaffMain className="staffMain">
 
-				<button onClick={() => setMostraForm(!mostraForm)}>ADICIONAR EVENTO <img src={plus1} /></button>
+				<button onClick={() => setMostraForm(!mostraForm)}>ADICIONAR EVENTO <img src={plus1} alt="Plus icon"/></button>
 
 				{mostraForm ?
 
@@ -206,15 +204,25 @@ export const Staff = () => {
 								</div>
 
 								<div className="cardsListaInfo">
+
 									<p>{item.nome}</p>
-									{/* <div>
+
+									<div className="descricaoItem">
+										<p>Valor: R${item.valor_event}</p>
+										<p>Local: {item.local_event}</p>
+										<p>Duração: {item.duracao}</p>
+										<p>Faixa etária: {item.faixa_etaria}</p>
+										<p>Qtd de Pessoas: {item.qtd_pessoas}</p>
 										<p>Data inicio: {item.data_inicio}</p>
 										<p>Data inicio: {item.data_fim}</p>
-									</div> */}
-									<div>
+										<p>Descrição: {item.descricao}</p>
+									</div>
+
+									<div className="editDelBtn">
 										<p onClick={() => { setEdit(!mostraEdit); setDadosEdit(item); }} id="editBtn">Editar</p>
 										<p onClick={() => deleteEvente(item.id)} id="deleteBtn">Deletar</p>
 									</div>
+
 								</div>
 
 							</li>
@@ -280,7 +288,7 @@ export const Staff = () => {
 							<p onClick={() => setEdit(!mostraEdit)}>Fechar X</p>
 						</EventoForm>
 					</div>
-					: null}
+				: null}
 
 
 
