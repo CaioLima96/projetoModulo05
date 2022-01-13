@@ -206,15 +206,25 @@ export const Staff = () => {
 								</div>
 
 								<div className="cardsListaInfo">
+
 									<p>{item.nome}</p>
-									{/* <div>
+
+									<div className="descricaoItem">
+										<p>Valor: R${item.valor_event}</p>
+										<p>Local: {item.local_event}</p>
+										<p>Duração: {item.duracao}</p>
+										<p>Faixa etária: {item.faixa_etaria}</p>
+										<p>Qtd de Pessoas: {item.qtd_pessoas}</p>
 										<p>Data inicio: {item.data_inicio}</p>
 										<p>Data inicio: {item.data_fim}</p>
-									</div> */}
-									<div>
+										<p>Descrição: {item.descricao}</p>
+									</div>
+
+									<div className="editDelBtn">
 										<p onClick={() => { setEdit(!mostraEdit); setDadosEdit(item); }} id="editBtn">Editar</p>
 										<p onClick={() => deleteEvente(item.id)} id="deleteBtn">Deletar</p>
 									</div>
+
 								</div>
 
 							</li>
@@ -280,7 +290,7 @@ export const Staff = () => {
 							<p onClick={() => setEdit(!mostraEdit)}>Fechar X</p>
 						</EventoForm>
 					</div>
-					: null}
+				: null}
 
 
 

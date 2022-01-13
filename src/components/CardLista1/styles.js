@@ -47,10 +47,10 @@ export const CardsLista = styled.ul `
         text-align: center;
         background-color: white;
 
-        div {
-            display: flex;
+        .descricaoItem {
+            /* display: flex;
             justify-content: center;
-            flex-wrap: wrap;
+            flex-wrap: wrap; */
 
             p:not(p:last-child) {
                 font-size: 14px;
