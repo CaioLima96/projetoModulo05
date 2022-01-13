@@ -9,6 +9,13 @@ import Loading from "../../components/LoadingAnimation";
 
 import './Index.css'
 
+const display = {
+	display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    flexDirection: 'column',
+}
+
 export const Experiencias = () => {
 
     const [dados, setDados] = useState([]);
@@ -39,7 +46,7 @@ export const Experiencias = () => {
 
             <main>
 
-                <CardLista1>
+                <CardLista1 id="expList">
                 {loading && <><Loading/></>}
                     {dados.map((item) => {
                         return (
@@ -52,12 +59,12 @@ export const Experiencias = () => {
 
                                 <div className="cardsListaInfo">
                                     <p>{item.nome}</p>
-                                    <div>
-										<p>Sobre: {item.descricao} -</p>
-										<p>Qtd pessoas: {item.qtd_pessoas} -</p>
-										<p>Horário: {item.horario} -</p>
-                                        <p>Dia: {item.dia_semana} -</p>
-										<p>Valor: R${item.valor_exp}</p>
+                                    <div style={display} className="descricaoItem">
+										<p className="descricaoInfo">Sobre: {item.descricao}</p>
+										<p className="descricaoInfo">Quantidade de pessoas: {item.qtd_pessoas}</p>
+										<p className="descricaoInfo">Horário: {item.horario}</p>
+                                        <p className="descricaoInfo">Dia: {item.dia_semana}</p>
+										<p className="descricaoInfo">Valor: R${item.valor_exp}</p>
 									</div>
                                 </div>
 

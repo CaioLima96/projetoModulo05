@@ -48,10 +48,9 @@ export const CardsLista = styled.ul `
         background-color: white;
 
         .descricaoItem {
-            /* display: flex;
-            justify-content: center;
-            flex-wrap: wrap; */
-
+            .descricaoInfo {
+                margin: 0.3rem;
+            }
             p:not(p:last-child) {
                 font-size: 14px;
                 margin-right: 0.313rem;
@@ -61,7 +60,7 @@ export const CardsLista = styled.ul `
 
     .cardsListaInfo > p {
         font-size: 1.25rem;
-        margin-bottom: 2.375rem;
+        margin-bottom: 0.8rem;
         text-transform: capitalize;
     }
 
