@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import { Experiencias } from './pages/Experiencias/Index.js';
 import { Staff } from './pages/Staff/index.js';
 import  FaleConosco from './pages/Contato/index.js';
-import { BrowserRouter,Route,Routes,Link } from "react-router-dom";
+import { BrowserRouter,Route,Routes } from "react-router-dom";
 
 
 import './App.css';
