@@ -12,12 +12,14 @@ export const CardsLista = styled.ul `
     }
 
     .cardsListaItem {
+        display: flex;
+        flex-direction: column;
         max-width: 450px;
         width: 100%;
-        height: 353px;
+        /* height: 353px;
 
         position: relative;
-        overflow: hidden;
+        overflow: hidden; */
 
         margin: 1%;
     }
@@ -37,37 +39,38 @@ export const CardsLista = styled.ul `
     }
 
     .cardsListaInfo {
-        width: 80%;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        width: 100%;
         
-        position: absolute;
+        /* position: absolute;
         bottom: 0px;
-        left: 10%;
+        left: 10%; */
 
         border-radius: 5px;
         text-align: center;
         background-color: white;
+        padding: 1.125rem 0.313rem 0.625rem;
 
         div {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
 
-            margin-bottom: 0.313rem;
+            /* margin-bottom: 0.313rem; */
 
-            p {
+            p:not(p:last-child) {
                 font-size: 14px;
-                margin: 0 0.313rem 0.313rem 0;
+                margin-right: 0.313rem;
             }
         }
     }
 
-    .cardsListaInfo p {
-        font-size: 1.25rem;
-        margin: 1.125rem 0 2.375rem 0;
-        // text-transform: capitalize;
-    }
-
     .cardsListaInfo > p {
+        font-size: 1.25rem;
+        margin-bottom: 2.375rem;
         text-transform: capitalize;
     }
 
