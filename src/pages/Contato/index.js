@@ -21,7 +21,7 @@ export default () => {
 
           <p>Email: hotelresiliapalace@gmail.com</p>
           <br></br>
-          <p>Entre em contato com as pessoas responsáveis pelo site:<a href="https://github.com/CaioLima96/projetoModulo05"> Github</a></p>
+          <p>Entre em contato com as pessoas responsáveis pelo site:<a href="https://github.com/CaioLima96/projetoModulo05" target="_blank"> Github</a></p>
         </div>
 
 
