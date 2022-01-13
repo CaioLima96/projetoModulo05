@@ -1,3 +1,5 @@
+import React from 'react';
+import styled from 'styled-components'
 
 export default ({ img, title, children, inverted = false }) => {
     const img_url = require(`../../../assets/img/eventos/${img}`)

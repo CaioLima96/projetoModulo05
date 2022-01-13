@@ -18,6 +18,11 @@ export const CarouselLayout = () => {
                     <p id="espaçoBotao">Nossa missão ...</p>
                     <hr></hr>
                 </div>
+                
+                <div id="canva">
+                    <iframe loading="lazy" id="iframe" src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAExQJqJQ5o&#x2F;view?embed"allowfullscreen="allowfullscreen" allow="fullscreen">
+                    </iframe>
+                </div>
             </CarouselCentral>
 
             <CarouselLeft>
