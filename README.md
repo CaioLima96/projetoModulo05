@@ -23,3 +23,23 @@ Use o comando para abrir no servidor local:
 ```bash
 yarn start
 ```
+
+## Sobre o Projeto 🛎️
+<p>Projeto do 5º e último módulo do curso WebDev Full Stack da Resilia Educação. O Hotel Resilia Palace é um site para hóspedes com exemplo de como seria uma página de funcionário. Integrada com a API construida no módulo 04 </p>
+
+<img src="src/assets/img/homePrint.jpg" width="" alt=""> 
+ </div>
+ 
+### Veja o nosso site hospedado no vercel
+[link](https://hotelresiliapalace.vercel.app/)
+
+***
+
+## 👨‍💻👩‍💻 Equipe de desenvolvedores:
+
+- <a href = "https://www.linkedin.com/in/adrielsaul/"> Adriel Saul </a>
+- <a href = "https://www.linkedin.com/in/caiovieiralima/"> Caio Vieira </a>
+- <a href = "https://www.linkedin.com/in/leoosilva/"> Leonardo Silva </a>
+- <a href = "https://www.linkedin.com/in/lorena-zanferrari-7a60a9126/"> Lorena Zanferrari </a>
+- <a href = "https://www.linkedin.com/in/marianamachado9/"> Mariana Machado </a>
+***
